@@ -110,7 +110,7 @@
     $('#sources-content').insertAdjacentHTML('beforeend',`<article class="sources-group"><h2>Academia · fontes educacionais</h2><ul>${catalog.education.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a><span class="source-scope">${esc(s.scope)}</span></li>`).join('')}</ul></article>`);
     $('#sources-content').insertAdjacentHTML('beforeend',`<article class="sources-group"><h2>Amadeus · métodos de pesquisa</h2><p class="muted">${esc(catalog.glossary.amadeus.referenceLimit)}</p><ul>${catalog.glossary.amadeus.references.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a></li>`).join('')}</ul></article>`);
   }
-  const viewNames={catalogo:'Plantas · A, B e C',caderno:'Meu caderno',metodo:'Como estudamos',fontes:'Biblioteca de fontes',estudo:'Academia de botânica',comparar:'Comparar grupos',ciclos:'Ciclos & reprodução',questoes:'Questões comentadas',provas:'ENEM & UFC/CCV',fisiologia:'Fisiologia viva'};
+  const viewNames={catalogo:'Plantas · A, B, C e D',caderno:'Meu caderno',metodo:'Como estudamos',fontes:'Biblioteca de fontes',estudo:'Academia de botânica',comparar:'Comparar grupos',ciclos:'Ciclos & reprodução',questoes:'Questões comentadas',provas:'ENEM & UFC/CCV',fisiologia:'Fisiologia viva'};
   function navigate() {
     const raw=location.hash.slice(1), legacy={animais:'https://aldenirfilho.github.io/atlas-vivo-360x-animais/',rochas:'https://aldenirfilho.github.io/atlas-vivo-360x-rochas/'};
     if(Object.hasOwn(legacy,raw)){location.replace(legacy[raw]);return;}
@@ -159,8 +159,8 @@
   });
   for(const [selector,values] of [['#clade-filter',plants.map(p=>p.education.classification.clade)],['#group-filter',plants.map(p=>p.education.classification.majorGroup)]])$(selector).insertAdjacentHTML('beforeend',[...new Set(values)].sort().map(value=>`<option value="${esc(value)}">${esc(selector==='#group-filter'?(catalog.education.groups.find(g=>g.id===value)?.name||value):value)}</option>`).join(''));
   $('#family-filter').insertAdjacentHTML('beforeend',[...new Set(plants.map(p=>p.family))].sort().map(f=>`<option value="${esc(f)}">${esc(f)}</option>`).join(''));
-  const heroPlant=plants.find(p=>p.id==='clitoria-ternatea'&&p.image);if(heroPlant)document.querySelector('.hero-art').innerHTML=`<img class="living-hero" src="${esc(heroPlant.image.path)}" alt="" width="1024" height="1024" loading="lazy" decoding="async"><span><i>Clitoria ternatea</i> · ilustração gerada por IA</span>`;
-  $('#letter-filter').value='C';$('#hero-count').textContent=plants.length;$('#nav-count').textContent=plants.length;$('#saved-count').textContent=notebook.favorites.length;
+  const heroPlant=plants.find(p=>p.id==='dendrobium-nobile'&&p.image);if(heroPlant)document.querySelector('.hero-art').innerHTML=`<img class="living-hero" src="${esc(heroPlant.image.path)}" alt="" width="1024" height="1024" loading="lazy" decoding="async"><span><i>Dendrobium nobile</i> · ilustração gerada por IA</span>`;
+  $('#letter-filter').value='D';$('#hero-count').textContent=plants.length;$('#nav-count').textContent=plants.length;$('#saved-count').textContent=notebook.favorites.length;
   renderCards();renderSources();navigate();window.addEventListener('hashchange',navigate);
   window.addEventListener('storage',event=>{if(event.key!==storageKey||!event.newValue)return;try{const incoming=AtlasNotebook.validateBackup(JSON.parse(event.newValue),[...byId.keys()]);notebook=AtlasNotebook.validateBackup(AtlasNotebook.merge(notebook,incoming),[...byId.keys()]);$('#saved-count').textContent=notebook.favorites.length;renderCards();if(location.hash==='#caderno')renderNotebook();if(activePlant)$('#plant-notes').innerHTML=recordsHtml(notebook.notes[activePlant]);}catch{notify('Dados de outra aba não puderam ser lidos. Os registros desta sessão foram preservados.');}});
   $('#export-recovery').hidden=recoveryRaw===null;
