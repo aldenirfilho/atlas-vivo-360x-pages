@@ -1,13 +1,17 @@
-# 🌿 Atlas Vivo 360X — publicação
+# Atlas Vivo · Plantas
 
-Site educativo público: https://aldenirfilho.github.io/atlas-vivo-360x-pages/
+Distribuição pública independente · versão 0.3.0 · 2026-10-20.
 
-Versão 0.2.0, publicada a partir do commit 0129ac1bd9eb7a4d2e1af466850b361c54f454ce do projeto de origem. Este repositório contém somente a distribuição estática do site, sem histórico ou documentos internos.
+- [Atlas Vivo · Plantas](https://aldenirfilho.github.io/atlas-vivo-360x-pages/)
+- [Animalia 360X](https://aldenirfilho.github.io/atlas-vivo-360x-animais/)
+- [Geo 360X](https://aldenirfilho.github.io/atlas-vivo-360x-rochas/)
 
-Inclui 12 fichas botânicas, 17 módulos de botânica/zoologia/geologia e 20 questões autorais comentadas. Conteúdo em revisão especializada. Os exercícios não são questões oficiais ENEM/UFC/CCV.
+22 perfis botânicos nas coleções A e B, 12 módulos e 24 questões autorais. O endereço anterior foi preservado para compatibilidade com links e cadernos dos visitantes.
 
-Notas e favoritos ficam no navegador do visitante. Não há telemetria, conta, backend ou envio do caderno a um servidor. Fontes externas são acessadas pelos links bibliográficos.
+Conteúdo educacional em revisão especializada, com fontes e limites no site. Questões originais sem chancela ENEM/UFC/CCV. Ilustrações editoriais não identificam exemplares.
 
-As ilustrações SVG são editoriais originais, não diagnósticas. Textos de estudo e exercícios foram preparados no projeto com auxílio de IA, com síntese original e referências verificáveis no site; fontes externas mantêm seus próprios direitos. Não há licença geral de reutilização atribuída a este projeto.
+Não há telemetria, conta ou backend. Notas e favoritos ficam no navegador; o formato v1 do caderno e os IDs anteriores foram mantidos. Fontes externas são abertas por links.
 
-Para atualizar, validar a versão no projeto de origem, copiar index.html, data/catalog.json e os sete arquivos de assets e conferir os hashes antes de enviar. O Pages serve a raiz da branch main; .nojekyll dispensa processamento Jekyll. Para retirar o site do ar, desativar Pages nas configurações; isso não apaga o código.
+Esta distribuição contém apenas arquivos necessários ao site e o catálogo JSON público quando aplicável. O histórico do projeto de origem e seus documentos internos permanecem separados. Fontes externas mantêm seus direitos; não foi definida uma licença geral de reutilização.
+
+Publicação: GitHub Pages, raiz da branch main, com .nojekyll. Para atualizar, gerar e validar a distribuição no projeto de origem e enviar o conjunto completo. Para retirar do ar, desativar Pages sem apagar o código.

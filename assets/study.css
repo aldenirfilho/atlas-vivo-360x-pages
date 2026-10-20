@@ -4,3 +4,18 @@
 @media(max-width:1020px){.study-layout{grid-template-columns:1fr}.module-menu{position:static;grid-template-columns:1fr 1fr}.module-reader{padding:26px}.cycle-layout{grid-template-columns:1fr}.cycle-wheel{grid-template-columns:repeat(4,minmax(0,1fr))}.cycle-wheel button strong{font-size:20px}.cycle-explanation{position:static}.group-cards{gap:15px}}
 @media(max-width:760px){.rail{overflow:visible}.rail .nav-stack a{padding:9px;font-size:11px}.rail .nav-stack a>span{display:none}.rail .future-nav{gap:9px;margin-top:10px}.rail .future-nav a{font-size:10px}.filters{grid-template-columns:1fr 1fr}.filters label{font-size:10px}.filters select{font-size:11px;padding:10px 6px}.study-toolbar{padding:16px;gap:15px}.study-toolbar label{font-size:12px;min-width:100%;flex-basis:100%}.module-menu{grid-template-columns:1fr}.module-menu button{font-size:13px;padding:12px 14px}.module-reader{padding:21px}.module-reader>h2{font-size:29px}.module-reader p{font-size:14px}.module-summary{font-size:15px!important}.module-reader h3{font-size:23px}.group-cards,.organ-grid,.organ-key,.fusion-grid{grid-template-columns:1fr}.cycle-wheel{grid-template-columns:1fr 1fr}.cycle-wheel button{min-height:145px;padding:15px}.cycle-wheel button strong{font-size:23px}.cycle-explanation{padding:23px}.question-card{padding:22px}.question-card h2{font-size:28px}.question-prompt{font-size:15px}.answer-option{font-size:14px;padding:13px}.study-disclaimer{font-size:12px}.learning-details{padding:15px}.organ-grid dd{font-size:13px}.study-refs{font-size:11px}.compare-table{min-width:1050px}.cycle-nav .button{font-size:12px}.profile-body .study-levels a{font-size:12px}.rail-bottom{display:none}}
 @media print{.module-menu,.study-toolbar,.cycle-nav,.question-nav{display:none}.study-layout,.cycle-layout{display:block}.module-reader,.cycle-explanation{border:0;padding:0;position:static}.table-scroll{overflow:visible}.study-table{min-width:0;font-size:10px}.study-table th,.study-table td{padding:7px}.learning-details{break-inside:avoid}}
+
+/* Fisiologia integrada e coleções A/B. */
+.filters{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.alphabet-badge{min-width:88px;white-space:nowrap}
+.physiology-map{margin:0 0 28px}
+.transport-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.transport-pair article{padding:24px;background:#e5eeeb;border:1px solid #b9cec4;border-radius:12px}
+.transport-pair article+article{background:#f0e9d9;border-color:#d7c9a7}
+.transport-pair h2{font-size:34px;margin:10px 0}
+.transport-pair p{font-size:14px;line-height:1.85;overflow-wrap:anywhere}
+.transport-pair .flow-path{font-weight:600;color:#345c49;border-top:1px solid #c4d6cb;padding-top:13px}
+.plant-system{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.plant-system span{flex:1;min-width:210px;padding:15px 18px;border:1px solid #d5dfca;border-radius:8px;background:#eff2e6;font-size:13px;line-height:1.7}
+@media(max-width:760px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.transport-pair{grid-template-columns:1fr}.transport-pair article{padding:20px}.plant-system span{min-width:0;flex-basis:100%}}
+@media(max-width:390px){.filters{grid-template-columns:1fr}}
