@@ -1,14 +1,14 @@
 # Atlas Vivo · Plantas
 
-Distribuição pública independente · versão 0.3.0 · 2026-10-20.
+Distribuição pública independente · versão 0.4.0 · 2026-10-20.
 
 - [Atlas Vivo · Plantas](https://aldenirfilho.github.io/atlas-vivo-360x-pages/)
 - [Animalia 360X](https://aldenirfilho.github.io/atlas-vivo-360x-animais/)
 - [Geo 360X](https://aldenirfilho.github.io/atlas-vivo-360x-rochas/)
 
-22 perfis botânicos nas coleções A e B, 12 módulos e 24 questões autorais. O endereço anterior foi preservado para compatibilidade com links e cadernos dos visitantes.
+34 perfis botânicos nas coleções A, B e C, 12 módulos e 36 questões autorais. A coleção C acrescenta 12 imagens geradas por IA e curiosidades fundamentadas. O endereço anterior foi preservado para compatibilidade com links e cadernos dos visitantes.
 
-Conteúdo educacional em revisão especializada, com fontes e limites no site. Questões originais sem chancela ENEM/UFC/CCV. Ilustrações editoriais não identificam exemplares.
+Conteúdo educacional em revisão especializada, com fontes e limites no site. Questões originais sem chancela ENEM/UFC/CCV. Ilustrações editoriais não identificam exemplares. As imagens C são geradas por IA; não são fotografias reais.
 
 Não há telemetria, conta ou backend. Notas e favoritos ficam no navegador; o formato v1 do caderno e os IDs anteriores foram mantidos. Fontes externas são abertas por links.
 

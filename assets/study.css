@@ -19,3 +19,17 @@
 .plant-system span{flex:1;min-width:210px;padding:15px 18px;border:1px solid #d5dfca;border-radius:8px;background:#eff2e6;font-size:13px;line-height:1.7}
 @media(max-width:760px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.transport-pair{grid-template-columns:1fr}.transport-pair article{padding:20px}.plant-system span{min-width:0;flex-basis:100%}}
 @media(max-width:390px){.filters{grid-template-columns:1fr}}
+
+/* Imagens editoriais geradas para a coleção C. */
+.plant-art.living-art{margin:0;width:100%;height:240px;background:#dbe9d6;overflow:hidden}
+.living-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.living-art .art-index{background:#fffc;border-radius:4px;padding:5px 7px;top:10px;left:10px;color:#284b38}
+.living-art .art-type{left:0;right:0;bottom:0;margin:0;padding:16px 10px 8px;background:linear-gradient(transparent,#173626e8);color:#fff;font-size:8px;line-height:1.6;letter-spacing:.5px}
+.profile-header .plant-art.living-art{height:260px}
+.profile-header .living-art img{object-fit:contain}
+.image-caption{font-size:11px!important;line-height:1.7!important;color:#627455!important;border-left:2px solid #b9cba3;padding-left:12px}
+.curiosity-box{background:#edf3e2;border:1px solid #d0ddbd;padding:8px 20px 18px;border-radius:10px;margin:22px 0}
+.curiosity-box li{margin:11px 0}
+.hero-art .living-hero{width:100%;height:240px;object-fit:cover;border-radius:100px 100px 22px 22px;box-shadow:0 12px 30px #304d3920}
+@media(max-width:760px){.plant-art.living-art{height:220px}.profile-header .plant-art.living-art{height:220px}}
+@media(max-width:390px){.plant-art.living-art{height:270px}}

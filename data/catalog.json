@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "0.3.0",
+  "version": "0.4.0",
   "title": "Atlas Vivo 360X · Plantas",
-  "collection": "A de Aldenir + B de biodiversidade",
+  "collection": "A de Aldenir + B de biodiversidade + C de curiosidade",
   "checkedAt": "2026-10-20",
   "collections": [
     {
@@ -12,9 +12,13 @@
     {
       "letter": "B",
       "title": "B de biodiversidade"
+    },
+    {
+      "letter": "C",
+      "title": "C de curiosidade"
     }
   ],
-  "scope": "Seleção editorial de 22 espécies com gêneros iniciados por A ou B; não exaustiva. A letra corresponde ao gênero científico, não necessariamente ao nome popular.",
+  "scope": "Seleção editorial de 34 espécies com gêneros iniciados por A, B ou C; não exaustiva. A letra corresponde ao gênero científico, não necessariamente ao nome popular.",
   "scientificReview": {
     "status": "pending",
     "botanicalReviewer": null,
@@ -23,9 +27,9 @@
   "taxonomyReference": "Kew / Plants of the World Online; fonte e recorte registrados por ficha.",
   "conservationReview": "Avaliações originais IUCN ainda não conferidas diretamente. Categorias reproduzidas por agregadores, quando citadas, são qualificadas.",
   "illustrations": {
-    "type": "SVG editoriais originais",
-    "creator": "Ilustrações programáticas preparadas no projeto com auxílio de IA",
-    "purpose": "Composição visual não diagnóstica; sem validação morfológica."
+    "type": "SVG editoriais A/B e ilustrações raster C geradas por IA",
+    "creator": "Ilustrações preparadas no projeto; coleção C gerada com imagegen",
+    "purpose": "Composição visual não diagnóstica; não são fotografias de exemplares identificados; revisão botânica das imagens pendente."
   },
   "evidenceLabels": {
     "tradicional": "Uso tradicional",
@@ -42,7 +46,7 @@
   },
   "riskLabelLimit": "Triagem editorial de perigos em contextos específicos; não estima probabilidade individual nem segurança alimentar.",
   "education": {
-    "version": "0.3.0",
+    "version": "0.4.0",
     "reviewStatus": "pending",
     "groups": [
       {
@@ -1121,6 +1125,260 @@
           "phy-cam-genome",
           "phy-cam-dynamics"
         ]
+      },
+      {
+        "id": "c1-q01",
+        "domain": "botanica",
+        "level": "vestibular",
+        "topic": "Café, autocompatibilidade e serviço de polinização",
+        "prompt": "Questão autoral de preparação ao ENEM, com cinco alternativas e sem chancela do exame. Uma turma acompanha flores de Coffea arabica, espécie autocompatível, e compara plantas com e sem acesso de abelhas. A turma mede pólen no estigma, tubos polínicos e frutos formados. Qual interpretação orienta melhor a investigação?",
+        "options": [
+          "A autocompatibilidade torna impossível qualquer contribuição de abelhas.",
+          "O pólen depositado no estigma já é um embrião diploide.",
+          "Número de visitantes, transporte de pólen e formação de frutos são etapas distintas e devem ser avaliadas separadamente.",
+          "Toda visita produz necessariamente uma semente, independentemente da compatibilidade.",
+          "A quantidade de pólen sobre o estigma, isoladamente, permite prever toda a fecundação e a frutificação, sem avaliar compatibilidade ou viabilidade."
+        ],
+        "answerIndex": 2,
+        "explanation": "Autocompatibilidade permite autofecundação em condições adequadas, mas não elimina contribuições de polinizadores. Depositar pólen, desenvolver tubo polínico e formar fruto são resultados diferentes; estudos devem medir a cadeia e controlar fatores ambientais.",
+        "sourceRefs": [
+          "c1-coffee-pollination"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c1-q02",
+        "domain": "botanica",
+        "level": "vestibular",
+        "topic": "Chá e barreiras reprodutivas",
+        "prompt": "Questão autoral de preparação ao ENEM, com cinco alternativas e sem chancela do exame. Em acessos autoincompatíveis de Camellia sinensis, pesquisadores observaram germinação do próprio pólen, mas interrupção ou desvio de tubos polínicos. Cruzamentos compatíveis tiveram maior sucesso. O resultado evidencia que:",
+        "options": [
+          "A chegada e germinação do pólen não garantem a fecundação; a interação com o pistilo pode impedir a continuidade reprodutiva.",
+          "Todo pólen da própria planta é necessariamente inviável e incapaz de germinar.",
+          "O fruto resulta diretamente de meiose das pétalas.",
+          "A autoincompatibilidade elimina a reprodução sexuada entre genótipos diferentes.",
+          "Como o próprio pólen germinou, a interrupção posterior do tubo demonstra necessariamente deficiência de nutrientes, excluindo reconhecimento entre pólen e pistilo."
+        ],
+        "answerIndex": 0,
+        "explanation": "Autoincompatibilidade pode atuar depois da germinação e antes da fecundação. O experimento distingue viabilidade inicial do pólen e compatibilidade do cruzamento; não autoriza atribuir um mecanismo idêntico a todo cultivar.",
+        "sourceRefs": [
+          "c1-tea-incompatibility"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c1-q03",
+        "domain": "botanica",
+        "level": "vestibular",
+        "topic": "Coqueiro e estruturas do fruto",
+        "prompt": "Questão autoral de preparação ao ENEM, com cinco alternativas e sem chancela do exame. Um aluno identifica no coco fibras externas, uma camada dura, tecido branco e líquido interno. Qual associação relaciona corretamente estrutura e função?",
+        "options": [
+          "Fibras são raízes adventícias, e o líquido é xilema retido.",
+          "A camada dura é o embrião; o tecido branco é exclusivamente placenta do ovário.",
+          "Todo o coco é uma semente sem participação de tecidos do fruto.",
+          "As fibras pertencem ao mesocarpo, mas todo o tecido branco e todo o líquido são partes do embrião que realizará a germinação.",
+          "Fibras pertencem ao mesocarpo; a camada dura é endocarpo; endosperma líquido e sólido oferecem reservas ao embrião."
+        ],
+        "answerIndex": 4,
+        "explanation": "O coco é uma drupa fibrosa, com tecidos do pericarpo e uma semente. Endosperma e embrião têm origens e funções diferentes; a presença de reserva líquida não transforma o conteúdo em seiva vascular.",
+        "sourceRefs": [
+          "c1-kew-cocos",
+          "c1-openstax-cycle"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c1-q04",
+        "domain": "botanica",
+        "level": "vestibular",
+        "topic": "Mamoeiro, expressão sexual e variabilidade",
+        "prompt": "Questão autoral de preparação ao ENEM, com cinco alternativas e sem chancela do exame. Uma escola cultiva mamoeiros e encontra plantas com flores masculinas, femininas e bissexuadas. Para estudar reprodução, qual conclusão é adequada?",
+        "options": [
+          "Todas as plantas são clones porque pertencem à mesma espécie.",
+          "A posição e o tipo de flor ajudam a reconhecer sistemas reprodutivos; plantas femininas dependem de uma fonte de pólen para a fecundação sexuada usual.",
+          "Folhas palmadamente lobadas provam que a planta é monocotiledônea.",
+          "Plantas com flores masculinas produzem óvulos dentro das anteras.",
+          "O tipo de flor observado permite determinar todo o genótipo de cada planta, dispensando análise de descendentes ou de marcadores genéticos."
+        ],
+        "answerIndex": 1,
+        "explanation": "O mamoeiro apresenta diferentes tipos sexuais. Anteras produzem pólen, enquanto óvulos se desenvolvem no ovário. Identidade de espécie não implica identidade genética, e lóbulos foliares não definem número de cotilédones.",
+        "sourceRefs": [
+          "c1-ufl-papaya",
+          "c1-papaya-sex-genome"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c1-q05",
+        "domain": "botanica",
+        "level": "vestibular",
+        "topic": "Pimentas, frugivoria e dispersão",
+        "prompt": "Questão autoral de preparação ao ENEM, com cinco alternativas e sem chancela do exame. Em populações silvestres de Capsicum annuum, uma equipe registra aves removendo frutos e verifica sementes viáveis depois do consumo. Qual mecanismo essa observação ajuda a investigar?",
+        "options": [
+          "A transferência exclusiva de pólen pelo trato digestório das aves.",
+          "A independência absoluta da planta em relação às interações animais.",
+          "A transformação de sementes em esporos por digestão.",
+          "A dispersão zoocórica, cuja eficiência depende de sobrevivência das sementes e local de deposição, além da remoção do fruto.",
+          "A remoção do fruto por uma ave comprova dispersão eficaz, mesmo quando todas as sementes são destruídas ou depositadas em local inadequado."
+        ],
+        "answerIndex": 3,
+        "explanation": "Frugivoria pode contribuir para dispersão quando sementes sobrevivem e chegam a locais adequados. Apenas contar frutos removidos não mede todo o serviço; química do fruto, morfologia da semente e fisiologia do consumidor podem interferir.",
+        "sourceRefs": [
+          "c1-chili-bird-dispersal",
+          "c1-chili-gut-retention"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c1-q06",
+        "domain": "botanica",
+        "level": "vestibular",
+        "topic": "Abobrinha, monoicia e abelhas",
+        "prompt": "Questão autoral de preparação ao ENEM, com cinco alternativas e sem chancela do exame. Uma horta de Cucurbita pepo tem flores masculinas e femininas em cada planta. Uma turma propõe impedir o acesso de insetos a parte das flores para investigar formação de sementes. Qual é o fundamento dessa comparação?",
+        "options": [
+          "Flores femininas produzem pólen nas pétalas, dispensando qualquer transporte.",
+          "Monoicia significa que toda flor tem anteras e ovário plenamente funcionais.",
+          "Mesmo na mesma planta, pólen deve ser transportado entre flores unissexuadas na reprodução sexuada usual; o experimento testa a contribuição dos visitantes.",
+          "Toda semente resulta de propagação vegetativa e dispensa fecundação.",
+          "A boa disponibilidade de água e nutrientes substitui a transferência de pólen e garante sementes em flores femininas isoladas dos visitantes."
+        ],
+        "answerIndex": 2,
+        "explanation": "Monoicia reúne flores masculinas e femininas na mesma planta, sem torná-las bissexuadas. Tratamentos de acesso e exclusão, acompanhados de controles e medidas de sementes, permitem avaliar contribuição dos visitantes; a dependência de cada cultivar deve ser verificada.",
+        "sourceRefs": [
+          "c1-ncsu-cucurbita",
+          "c1-psu-squash-pollination"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c2-q01",
+        "domain": "botanica",
+        "topic": "Canela, órgãos vegetais e taxonomia",
+        "level": "vestibular",
+        "prompt": "Questão autoral de preparação, sem chancela do ENEM. Uma turma recebe fotografias de folhas e uma amostra comercial rotulada apenas como canela. O professor informa que Cinnamomum verum pertence às Lauraceae e que a especiaria corresponde a tecidos do caule. Qual conclusão combina anatomia e identificação científica?",
+        "options": [
+          "A posição externa da especiaria comprova que ela é fruto e permite identificar a espécie pelo aroma.",
+          "A especiaria é casca; o nome popular e as fotografias, isoladamente, não asseguram espécie nem composição química.",
+          "Toda angiosperma de folha larga é eudicotiledônea, portanto Cinnamomum não pode ser magnoliídea.",
+          "Cascas são tecidos mortos sem relação com transporte ou crescimento, logo sua retirada não afeta a árvore.",
+          "Diferenças no perfil químico, isoladamente, bastam para classificar cada quimiotipo como uma nova espécie."
+        ],
+        "answerIndex": 1,
+        "explanation": "A casca é estrutura caulinar, e tecidos externos incluem funções diferentes. Lauraceae está entre magnoliídeas. Produtos chamados canela podem pertencer a espécies distintas; mesmo materiais de C. verum mostram variação química. Identificação e análise exigem evidências próprias.",
+        "sourceRefs": [
+          "c2-kew-cinnamomum",
+          "c2-nparks-cinnamomum",
+          "c2-cinnamomum-chemotypes"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c2-q02",
+        "domain": "botanica",
+        "topic": "Rizoma, clonagem e variabilidade",
+        "level": "vestibular",
+        "prompt": "Questão autoral de preparação, sem chancela do ENEM. Rizomas de Curcuma longa com gemas originam novas plantas. Em outro experimento, pesquisadores analisam progênies obtidas de sementes de uma cultivar. Que interpretação explica as duas observações?",
+        "options": [
+          "O rizoma é uma raiz, e suas gemas realizam fecundação externa.",
+          "A produção de sementes prova que não pode existir propagação vegetativa na espécie.",
+          "Gemas do rizoma permitem propagação clonal; sementes documentadas mostram que reprodução sexuada não pode ser excluída de toda a espécie.",
+          "Rizomas e sementes são órgãos equivalentes, ambos formados por meiose diretamente.",
+          "Todo broto oriundo de rizoma passa por redução à metade dos cromossomos, como na formação meiótica de esporos."
+        ],
+        "answerIndex": 2,
+        "explanation": "Rizoma é caule modificado com gemas. Sua propagação ocorre sem fecundação e tende a conservar o genótipo, ressalvadas mutações. O estudo de progênies mostra formação de sementes em material específico; não torna todos os cultivos igualmente férteis.",
+        "sourceRefs": [
+          "c2-nparks-curcuma",
+          "c2-curcuma-seed",
+          "c2-os-flowering"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c2-q03",
+        "domain": "botanica",
+        "topic": "Cones e sementes nuas",
+        "level": "vestibular",
+        "prompt": "Questão autoral de preparação, sem chancela do ENEM. Em um jardim, Cedrus libani apresenta cones lenhosos eretos e sementes. Um cartaz chama os cones de frutos, enquanto outra placa os descreve como estruturas de uma conífera. Qual correção botânica deve ser feita?",
+        "options": [
+          "Cones são frutos carnosos e suas sementes não contêm embrião.",
+          "Sementes nuas são sementes sem tegumento, incapazes de proteção embrionária.",
+          "Coníferas produzem flores com estigma, e os cones são ovários maduros.",
+          "O cone deve ser classificado como fruto acessório, pois suas escamas protegem estruturas reprodutivas mesmo sem ovário.",
+          "Cones não são frutos botânicos; os óvulos não ficam encerrados em ovário, e as sementes podem ter tegumento."
+        ],
+        "answerIndex": 4,
+        "explanation": "Gimnospermas não formam fruto derivado de ovário. Semente nua se refere à relação com o ovário, não à ausência de tegumento. Cedrus é conífera com pólen e sementes; não é samambaia nem angiosperma. A função protetora das escamas não transforma o cone em fruto acessório.",
+        "sourceRefs": [
+          "c2-kew-cedrus",
+          "c2-ncsu-cedrus",
+          "c2-os-gymnosperms"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c2-q04",
+        "domain": "botanica",
+        "topic": "Samambaias e alternância de gerações",
+        "level": "vestibular",
+        "prompt": "Questão autoral de preparação, sem chancela do ENEM. Alunos observam soros na face inferior de frondes de Cyathea arborea. Em laboratório, esporos dão origem a pequenos gametófitos. Qual sequência explica corretamente o ciclo?",
+        "options": [
+          "Meiose no esporângio gera esporos n; o gametófito forma gametas por mitose e a fecundação produz zigoto 2n.",
+          "Soros produzem sementes 2n; estas germinam diretamente em gametas haploides.",
+          "O gametófito produz gametas por meiose, reduzindo de n para metade de n.",
+          "A fecundação forma um esporo n que elimina a necessidade de água para os anterozoides.",
+          "Como esporos e gametas podem ser haploides, são a mesma etapa do ciclo e têm a mesma função reprodutiva."
+        ],
+        "answerIndex": 0,
+        "explanation": "Soros agrupam esporângios do esporófito. A meiose produz esporos n, que formam gametófitos; gametas surgem por mitose nessa fase. A fecundação restaura 2n. Samambaias possuem vasos, mas não sementes ou polinização.",
+        "sourceRefs": [
+          "c2-wfo-cyathea",
+          "c2-os-ferns"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c2-q05",
+        "domain": "botanica",
+        "topic": "Musgos, sucessão e interpretação causal",
+        "level": "vestibular",
+        "prompt": "Questão autoral de preparação, sem chancela do ENEM. Após um incêndio, uma área passa a apresentar tufos de Ceratodon purpureus. O relatório informa chegada de esporos pelo vento e lembra que indivíduos presentes antes do fogo podem ter sido mortos. O que os dados permitem concluir?",
+        "options": [
+          "A presença posterior demonstra que todos os gametófitos sobreviveram às chamas.",
+          "O incêndio converteu células do solo em sementes de musgo.",
+          "A colonização demonstra que o calor do incêndio é necessário para a fecundação dos gametas do musgo.",
+          "A colonização pode resultar de dispersão e estabelecimento após a perturbação, sem comprovar resistência direta dos indivíduos ao fogo.",
+          "Todo musgo é vascular e a cápsula funciona como fruto de proteção contra incêndios."
+        ],
+        "answerIndex": 3,
+        "explanation": "Presença após uma perturbação não comprova sobrevivência durante ela. Esporos externos podem colonizar o substrato exposto. O tapete verde é gametófito; cápsula é esporângio do esporófito e o musgo não possui xilema/floema verdadeiros. Colonizar uma área queimada não demonstra exigência de calor para fecundação.",
+        "sourceRefs": [
+          "c2-forest-ceratodon",
+          "c2-os-mosses"
+        ],
+        "collection": "C"
+      },
+      {
+        "id": "c2-q06",
+        "domain": "botanica",
+        "topic": "Pigmentos e níveis de evidência",
+        "level": "vestibular",
+        "prompt": "Questão autoral de preparação, sem chancela do ENEM. Um experimento com pigmentos de Clitoria ternatea registra mudança de cor conforme o pH. Uma propaganda usa esse resultado para prometer tratamento de diabetes. Qual análise é adequada?",
+        "options": [
+          "Mudança de cor demonstra redução de glicose em qualquer organismo.",
+          "O experimento informa propriedades químicas dos pigmentos; eficácia e segurança clínica exigem estudos próprios, sem serem deduzidas da cor.",
+          "Como o pigmento é natural, interações e eventos adversos são impossíveis.",
+          "A alteração de pH transforma antocianinas em microrganismos fixadores de nitrogênio.",
+          "A cor que o pigmento assume permite inferir sua biodisponibilidade e segurança sem avaliar o organismo exposto."
+        ],
+        "answerIndex": 1,
+        "explanation": "Equilíbrios químicos alteram o espectro de antocianinas. Isso não mede doença, benefício clínico ou segurança prolongada. Mesmo resultados agudos de uma preparação em voluntários não equivalem a tratamento crônico validado; pigmentos, microrganismos e ciclotídeos são categorias distintas.",
+        "sourceRefs": [
+          "c2-clitoria-colour",
+          "c2-clitoria-trial",
+          "c2-clitoria-cyclotide"
+        ],
+        "collection": "C"
       }
     ],
     "sources": [
@@ -2127,6 +2385,366 @@
         "scope": "Revisão taxonômica primária de besouros polinizadores e relações com populações de Bowenia; não resolve sozinha todos os limites populacionais da planta Consulta: 2026-10-20."
       },
       {
+        "id": "c1-kew-coffea",
+        "title": "Kew POWO — Coffea arabica L.",
+        "url": "https://powo.science.kew.org/taxon/747038-1",
+        "scope": "Nome aceito, autoria, Rubiaceae/Gentianales e distribuição do backbone; usos agregados não comprovam eficácia clínica. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-kew-camellia",
+        "title": "Kew POWO — Camellia sinensis (L.) Kuntze",
+        "url": "https://powo.science.kew.org/taxon/828548-1",
+        "scope": "Nome aceito, autoria, Theaceae/Ericales, distribuição e variedades aceitas; nenhuma variedade é atribuída ao exemplar genérico. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-kew-cocos",
+        "title": "Kew POWO — Cocos nucifera L.",
+        "url": "https://powo.science.kew.org/taxon/666160-1",
+        "scope": "Nome aceito, autoria, Arecaceae/Arecales e distribuição; perfil geral descreve mesocarpo fibroso e endosperma líquido/sólido. Não se transfere categoria de conservação agregada. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-kew-carica",
+        "title": "Kew POWO — Carica papaya L.",
+        "url": "https://powo.science.kew.org/taxon/30011248-2",
+        "scope": "Nome aceito, autoria, Caricaceae/Brassicales e distribuição nativa do sul do México à Venezuela; sem atribuição de categoria IUCN. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-kew-capsicum",
+        "title": "Kew POWO — Capsicum annuum L.",
+        "url": "https://powo.science.kew.org/taxon/316944-2",
+        "scope": "Nome aceito, autoria, Solanaceae/Solanales e distribuição ampla do sul dos EUA ao Brasil e Caribe; variedades aceitas não equivalem a todos os nomes comerciais. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-kew-cucurbita",
+        "title": "Kew POWO — Cucurbita pepo L.",
+        "url": "https://powo.science.kew.org/taxon/292416-1",
+        "scope": "Nome aceito, autoria, Cucurbitaceae/Cucurbitales e tratamento como cultígeno do México; nenhum grupo hortícola ou subespécie atribuído sem identificação. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-ncsu-coffea",
+        "title": "NC State Extension — Coffea arabica",
+        "url": "https://plants.ces.ncsu.edu/plants/coffea-arabica/",
+        "scope": "Morfologia, folhas opostas e frutos/sementes do cafeeiro; espécie africana apesar do epíteto arabica. Condições hortícolas regionais não são prescrição agronômica brasileira. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-coffee-pollination",
+        "title": "Hipólito et al. (2020) — Performance, Effectiveness, and Efficiency of Honeybees as Pollinators of Coffea arabica",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32691402/",
+        "scope": "Estudo experimental na Bahia sobre visitas, pólen, tubos polínicos e frutificação; resumo consultado. Visitação e eficiência são medidas distintas; resultados de uma fazenda não garantem rendimento universal. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-caffeine-bees",
+        "title": "Wright et al. (2013) — Caffeine in floral nectar enhances a pollinator’s memory of reward",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4521368/",
+        "scope": "Pesquisa primária: cafeína no néctar de Coffea/Citrus e condicionamento olfativo em abelhas; texto consultado. Experimento com polinizadores não estabelece efeito terapêutico ou emocional humano. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-fda-caffeine",
+        "title": "FDA — Spilling the Beans: How Much Caffeine is Too Much?",
+        "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much",
+        "scope": "Orientação institucional: estimulação, variabilidade individual, sintomas de excesso e abstinência de cafeína. Aqui não se fornece dose ou promessa de desempenho. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-ncsu-camellia",
+        "title": "NC State Extension — Camellia sinensis",
+        "url": "https://plants.ces.ncsu.edu/plants/camellia-sinensis/common-name/tea-camellia/",
+        "scope": "Folhas alternas serrilhadas, flores, cápsula, atração de abelhas e diversidade de processamento do chá. Reprodução de fotografias da página não realizada. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-tea-incompatibility",
+        "title": "Seth et al. (2019) — Global Transcriptional Insights of Pollen-Pistil Interactions in Tea",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6387076/",
+        "scope": "Microscopia e transcriptômica de dois acessos autoincompatíveis de Camellia sinensis; texto/resumo e métodos consultados. Genes candidatos não equivalem a mecanismo universal comprovado em todo cultivar. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-nccih-tea",
+        "title": "NCCIH — Green Tea: Usefulness and Safety",
+        "url": "https://www.nccih.nih.gov/health/green-tea",
+        "scope": "Síntese institucional sobre ensaios, pequenos efeitos em alguns marcadores, cafeína, interações e lesão hepática associada principalmente a extratos concentrados; bebida e suplemento não são equivalentes. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-coconut-domestication",
+        "title": "Gunn, Baudouin & Olsen (2011) — Independent Origins of Cultivated Coconut",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0021143",
+        "scope": "Pesquisa primária com 1.322 acessos e microssatélites: estrutura Pacífico/Indo-Atlântico, história humana e diversidade reprodutiva; texto consultado. Anão não é sinônimo universal de autógamo. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-coconut-ecology",
+        "title": "Young et al. (2010) — Plants cause ecosystem nutrient depletion via interruption of bird-derived spatial subsidies",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2836700/",
+        "scope": "Pesquisa primária no atol Palmyra: abundância de coqueiros, uso por aves e aportes de nutrientes marinhos. Resultado contextual; não classifica automaticamente o coqueiro como invasor em todo local. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-coconut-lipids-trial",
+        "title": "Maki et al. (2018) — Corn Oil Lowers Plasma Cholesterol Compared with Coconut Oil",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30204921/",
+        "scope": "Ensaio cruzado em adultos com colesterol elevado: perfil lipídico mais favorável com óleo de milho na comparação estudada; resumo consultado. Não compara água de coco nem constitui recomendação alimentar individual. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-ufl-papaya",
+        "title": "UF/IFAS — Papaya Growing in the Florida Home Landscape",
+        "url": "https://edis.ifas.ufl.edu/publication/MG054",
+        "scope": "Síntese institucional sobre hábito arborescente, folhas, baga, plantas masculinas/femininas/hermafroditas e propagação por sementes; trechos indexados consultados, sem transpor calendário da Flórida para o Brasil. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-papaya-sex-genome",
+        "title": "Wang et al. (2012) — Sequencing papaya X and Yh chromosomes",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3427123/",
+        "scope": "Pesquisa primária sobre regiões ligadas ao sexo e evolução de cromossomos sexuais do mamoeiro; resumo consultado. A ficha não atribui genótipo a uma fotografia. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-efsa-papain",
+        "title": "EFSA FEZ (2026) — Safety evaluation of the food enzyme papain from Carica papaya latex",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41536844/",
+        "scope": "Avaliação institucional de complexo enzimático industrial específico e exposição prevista; risco alérgico não excluído. Resumo consultado, sem extrapolação para látex doméstico, feridas ou extratos medicinais. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-papaya-allergy",
+        "title": "Rojas-Mandujano et al. (2018) — Latex-papaya syndrome",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29723936/",
+        "scope": "Série observacional selecionada de 11 pacientes com alergia ao látex e anafilaxia ao mamão; resumo consultado. Não estima prevalência em consumidores nem implica reação em toda pessoa alérgica a látex. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-ncsu-capsicum",
+        "title": "NC State Extension — Capsicum annuum",
+        "url": "https://plants.ces.ncsu.edu/plants/capsicum-annuum/common-name/red-pepper/",
+        "scope": "Morfologia, hábito sensível à geada e cultivares de pungência variável. Nome ornamental não garante origem alimentar ou ausência de resíduos. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-chili-bird-dispersal",
+        "title": "Levey et al. (2006) — A field test of directed deterrence in two wild chilies",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16896774/",
+        "scope": "Pesquisa primária com C. annuum e C. chacoense: monitoramento e vídeo registraram remoção dos frutos por aves no sistema estudado; resumo consultado. Não se generaliza para todas as aves, mamíferos ou variedades. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-chili-gut-retention",
+        "title": "Tewksbury et al. (2008) — Costs and benefits of capsaicin-mediated control of gut retention",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18376552/",
+        "scope": "Experimentos primários com pimentas silvestres e aves: efeito da capsaicina na retenção de sementes depende de contexto, espécie e morfologia; resumo consultado. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-ema-capsaicin",
+        "title": "EMA — Qutenza, capsaicina",
+        "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/qutenza",
+        "scope": "Indicação europeia de preparação cutânea específica para dor neuropática periférica em adultos; avaliação regulatória e informação de produto atualizada em 2026. Não valida comer pimenta ou aplicar fruto na pele como tratamento. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-ema-capsaicin-safety",
+        "title": "EMA — Qutenza, informação de produto",
+        "url": "https://www.ema.europa.eu/en/documents/product-information/qutenza-epar-product-information_en.pdf",
+        "scope": "Trechos oficiais indexados de segurança: ardor, irritação e relatos de queimaduras do medicamento; não são estimativas de incidência do alimento nem instruções de aplicação doméstica. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-ncsu-cucurbita",
+        "title": "NC State Extension — Cucurbita pepo",
+        "url": "https://plants.ces.ncsu.edu/plants/cucurbita-pepo/common-name/ornamental-gourd/",
+        "scope": "Folhas, gavinhas, hábito anual, flores unissexuadas na mesma planta e pepônio; não se adota a afirmação genérica de comestibilidade de todas as sementes, diante do alerta toxicológico oficial. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-psu-squash-pollination",
+        "title": "Penn State Extension — Polinización Integrada de Cultivos de Calabazas",
+        "url": "https://extension.psu.edu/polinizacion-integrada-de-cultivos-de-calabazas",
+        "scope": "Página institucional atualizada em 2026: transporte de pólen entre flores unissexuadas e abelhas especialistas de Cucurbita; composição de visitantes é regional e não universal. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-squash-drought",
+        "title": "Gambel & Holway (2023) — Divergent responses of generalist and specialist pollinators to experimental drought",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10524995/",
+        "scope": "Pesquisa primária com Cucurbita pepo: solo, recursos florais, comportamento de abelhas e formação de sementes; resumo e texto indexado consultados. Não estabelece limiar agronômico universal. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-ema-pumpkin-seed",
+        "title": "EMA/HMPC (2012) — Final Community herbal monograph on Cucurbita pepo L., semen",
+        "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-cucurbita-pepo-l-semen_en.pdf",
+        "scope": "Monografia final de uso tradicional de preparações específicas da semente; registro oficial e trechos indexados consultados. Reconhecimento tradicional não comprova cura de doença prostática, câncer ou eficácia de qualquer óleo. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-anses-squash",
+        "title": "ANSES — Not all squash are edible",
+        "url": "https://vigilanses.anses.fr/sites/default/files/VigilAnsesN3_October2017_Squash.pdf",
+        "scope": "Boletim institucional de toxicovigilância: formas ornamentais e comestíveis de Cucurbita pepo e intoxicações por cucurbitacinas; trechos indexados consultados. Cor e formato não certificam segurança alimentar. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c1-openstax-cycle",
+        "title": "OpenStax Biology 2e — Pollination and Fertilization",
+        "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+        "scope": "Fundamentos de meiose, gametófitos, polinização, fecundação e formação de sementes; síntese didática original. Não é fonte de cariótipo de acesso nem banco de questões oficiais. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c2-kew-cinnamomum",
+        "title": "Kew POWO — Cinnamomum verum J.Presl",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:463752-1",
+        "scope": "Nome aceito, autoria, Laurales/Lauraceae, sinônimos e distribuição no backbone. Usos agregados não são comprovação clínica. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-kew-curcuma",
+        "title": "Kew POWO — Curcuma longa L.",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:796451-1",
+        "scope": "Nome aceito, Zingiberales/Zingiberaceae e origem tratada como cultígeno do sudoeste da Índia; distribuição não demonstra segurança. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-kew-cedrus",
+        "title": "Kew POWO — Cedrus libani A.Rich.",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:676705-1",
+        "scope": "Nome aceito, Pinales/Pinaceae, sinônimos e distribuição nativa. Taxonomia atual separa espécies relacionadas; não se atribui subespécie a exemplar. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-kew-cyathea",
+        "title": "Kew POWO — Cyathea arborea (L.) Sm.",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:17071820-1",
+        "scope": "Nome aceito, Cyatheales/Cyatheaceae e distribuição. Família em circunscrição explícita; não atribui categoria global de ameaça. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-kew-clitoria",
+        "title": "Kew POWO — Clitoria ternatea L.",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:486606-1",
+        "scope": "Nome aceito, Fabales/Fabaceae e distribuição. A frase sintética da área nativa e a lista detalhada do backbone não são idênticas; origem exata não é resolvida aqui. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-wfo-ceratodon",
+        "title": "World Flora Online — Ceratodon purpureus (Hedw.) Brid.",
+        "url": "https://www.worldfloraonline.org/taxon/wfo-0001180270",
+        "scope": "Registro atual, autoria e classificação Bryophyta/Bryopsida/Pottiales/Ceratodontaceae; descrições agregadas da Flora of North America. Floras antigas usam Ditrichaceae/Dicranales. Subespécies listadas não são atribuídas ao material. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-nparks-cinnamomum",
+        "title": "NParks — Cinnamomum verum",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2807",
+        "scope": "Morfologia, folhas juvenis, drupa e associação com fauna. Usado apenas para botânica e ecologia descrita, sem adotar alegações terapêuticas do agregador. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-nparks-curcuma",
+        "title": "NParks — Curcuma longa",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/1/9/1904",
+        "scope": "Morfologia, rizoma e propagação. A afirmação genérica de ausência de sementes no cadastro é qualificada pelo estudo citológico de progênies; alegações medicinais da ficha não são adotadas. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-nparks-clitoria",
+        "title": "NParks — Clitoria ternatea",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/1/3/1372",
+        "scope": "Folhas compostas, flores, vagens, insetos e associação fixadora de nitrogênio. O Atlas explicita que quem fixa N₂ são microrganismos simbiontes, não raízes isoladamente; sem validar usos tradicionais listados. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-ncsu-cedrus",
+        "title": "NC State Extension — Cedrus libani",
+        "url": "https://plants.ces.ncsu.edu/plants/cedrus-libani/",
+        "scope": "Hábito, acículas, cones e fauna em contexto de horticultura. Campos automáticos chamados fruit/flower não significam fruto/flor botânicos em coníferas; a distribuição segue POWO. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-wfo-cyathea",
+        "title": "World Flora Online — Cyathea arborea, descrição",
+        "url": "https://www.worldfloraonline.org/taxon/wfo-0001108904",
+        "scope": "Trechos institucionais indexados consultados: soros abaxiais e indúsio; carregamento direto falhou. Não se afirma leitura integral da flora agregada. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-forest-cyathea",
+        "title": "Hogan et al. (2022) — Solar radiation and soil moisture drive tropical forest understory responses to experimental and natural hurricanes",
+        "url": "https://research.fs.usda.gov/treesearch/64516",
+        "scope": "Pesquisa primária depositada no US Forest Service; resumo consultado. Recrutamento de Cyathea arborea após o furacão Maria em parcelas controle de Luquillo; não é previsão para toda floresta. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-forest-ceratodon",
+        "title": "US Forest Service FEIS — Ceratodon purpureus, fire moss",
+        "url": "https://research.fs.usda.gov/feis/species-reviews/cerpur",
+        "scope": "Síntese institucional com estudos de sucessão e fogo: colonização por esporos, protonema, umidade e metais. Evidência histórica sobretudo extratropical; não sustenta o uso de fogo para cultivar musgos. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-ceratodon-genome",
+        "title": "Carey et al. (2021) — Gene-rich UV sex chromosomes harbor conserved regulators of sexual development",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34193417/",
+        "scope": "Artigo original, Science Advances, DOI 10.1126/sciadv.abh2488. Registro, resumo e legendas consultados: genomas de gametófitos masculino/feminino e cromossomos UV; não é estudo toxicológico. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-curcuma-seed",
+        "title": "Nair et al. (2010) — Characterization of Open-Pollinated Seedling Progenies of Turmeric",
+        "url": "https://www.jstage.jst.go.jp/article/cytologia/75/4/75_4_443/_article",
+        "scope": "Resumo do experimento citológico e agronômico: 14 progênies de sementes de IISR Kedaram, variação cromossômica e química. Evita a afirmação absoluta de que a espécie nunca produz sementes; contagens não são transferidas a acessos desconhecidos. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-nccih-cinnamon",
+        "title": "NIH/NCCIH — Cinnamon: Usefulness and Safety",
+        "url": "https://www.nccih.nih.gov/health/cinnamon",
+        "scope": "Síntese institucional sobre ausência de conclusão terapêutica geral, alergia/irritação e diferença entre Ceylon cinnamon e cassia em cumarina. Não atribui o risco de cassia automaticamente a C. verum. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-nccih-turmeric",
+        "title": "NIH/NCCIH — Turmeric: Usefulness and Safety",
+        "url": "https://www.nccih.nih.gov/health/turmeric",
+        "scope": "Síntese institucional: planta, curcumina e produtos distintos; resultados clínicos iniciais, eventos digestivos e relatos de lesão hepática com formulações de maior biodisponibilidade. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-turmeric-dilin",
+        "title": "Halegoua-DeMarzio et al. (2023) — Liver Injury Associated with Turmeric: Ten Cases from DILIN",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36252717/",
+        "scope": "Série clínica primária de lesão hepática associada a produtos de cúrcuma; registro e resumo consultados. Não estima incidência na população nem equivale ao uso culinário habitual. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-cinnamomum-chemotypes",
+        "title": "Farias et al. (2020) — Chemical composition and biological activities of two chemotype-oils from Cinnamomum verum growing in North Brazil",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32728267/",
+        "scope": "Resumo descreve análises químicas e antifúngicas de materiais do Maranhão, com forte variação entre locais e órgãos. Apesar do rótulo Review no índice, há dados experimentais no resumo; não é ensaio clínico. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-cedrus-xylogenesis",
+        "title": "Güney et al. (2015) — Cambial activity and xylogenesis in stems of Cedrus libani at different altitudes",
+        "url": "https://link.springer.com/article/10.1186/s40529-015-0100-z",
+        "scope": "Artigo experimental sobre formação do xilema em diferentes altitudes; resumo e trechos acessíveis consultados. Relações sazonais locais não definem calendário universal ou tolerância fixa à seca. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-clitoria-colour",
+        "title": "Spectral Characteristic, Storage Stability and Antioxidant Properties of Anthocyanin Extracts from Flowers of Butterfly Pea (2021)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8622631/",
+        "scope": "Pesquisa experimental sobre espectro, pH e estabilidade de pigmentos; resumo e trechos indexados consultados. Ensaio químico antioxidante não demonstra benefício clínico nem fornece instrução de preparo. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-clitoria-trial",
+        "title": "Chusak et al. (2018) — Acute effect of Clitoria ternatea flower beverage on glycemic response and antioxidant capacity",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5759795/",
+        "scope": "Ensaio cruzado randomizado agudo em homens saudáveis; resumo consultado. Marcadores pós-prandiais e preparação experimental não comprovam prevenção ou tratamento crônico de diabetes. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-clitoria-cyclotide",
+        "title": "Poth et al. (2011) — Discovery of an unusual biosynthetic origin for circular proteins in legumes",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21593408/",
+        "scope": "Artigo original: origem biossintética de ciclotídeos e atividade inseticida experimental de Cter M. Registro e resumo consultados; não mede risco de qualquer flor ornamental nem benefício de consumo humano. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-os-flowering",
+        "title": "OpenStax Biology 2e — Pollination and Fertilization",
+        "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+        "scope": "Princípios gerais de alternância de gerações e fecundação de angiospermas, em síntese própria. Não define citótipo, polinizador efetivo ou rendimento de sementes de cada acesso; sem copiar figuras/exercícios. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-os-gymnosperms",
+        "title": "OpenStax Biology 2e — Gymnosperms",
+        "url": "https://openstax.org/books/biology-2e/pages/26-2-gymnosperms",
+        "scope": "Princípios gerais de sementes nuas, cones, pólen e ciclo de coníferas. Síntese original, sem reprodução de figuras; comparação entre grupos não é identificação individual. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-os-ferns",
+        "title": "OpenStax Biology 2e — Seedless Vascular Plants",
+        "url": "https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants",
+        "scope": "Princípios de vascularização, esporófito dominante e ciclo com prótalo em samambaias. Síntese própria; não se universaliza a forma do gametófito ou a ecologia a todas as espécies. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-os-mosses",
+        "title": "OpenStax Biology 2e — Bryophytes",
+        "url": "https://openstax.org/books/biology-2e/pages/25-3-bryophytes",
+        "scope": "Princípios de gametófito dominante, rizoides, protonema e esporófito ligado ao gametófito. Síntese própria, sem copiar imagens ou avaliações; n/2n representam fases. Consulta editorial: 2026-10-20."
+      },
+      {
+        "id": "c2-kew-cedrela",
+        "title": "Kew POWO — Cedrela P.Browne",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30014434-2",
+        "scope": "Gênero aceito de Meliaceae/Sapindales, usado somente para comparar o nome popular cedro com Cedrus. Não é uma nova ficha de espécie. Consulta: 2026-10-20."
+      },
+      {
+        "id": "c2-os-nitrogen",
+        "title": "OpenStax Biology 2e — Nutritional Adaptations of Plants",
+        "url": "https://openstax.org/books/biology-2e/pages/31-3-nutritional-adaptations-of-plants",
+        "scope": "Princípios da simbiose em nódulos e fixação de N₂ por microrganismos. Base geral, sem comprovar nodulação ou taxa de fixação de um exemplar de Clitoria. Síntese original, sem imagens ou exercícios reproduzidos. Consulta: 2026-10-20."
+      },
+      {
         "id": "exam-inep-matrix",
         "title": "Inep — Matrizes de Referência | Enem (publicação de 2026)",
         "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem/",
@@ -2365,7 +2983,7 @@
           "edu-stems"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -2521,7 +3139,7 @@
           "edu-fertilization"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -2678,7 +3296,7 @@
           "edu-stems"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -2827,7 +3445,7 @@
           "edu-leaves"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -2970,7 +3588,7 @@
           "edu-asexual"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -3112,7 +3730,7 @@
           "edu-leaves"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -3284,7 +3902,7 @@
           "edu-fertilization"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -3434,7 +4052,7 @@
           "edu-asexual"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -3583,7 +4201,7 @@
           "edu-roots"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -3731,7 +4349,7 @@
           "edu-leaves"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -3863,7 +4481,7 @@
           "edu-reproduction-structure"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -4019,7 +4637,7 @@
           "edu-atropine-chemistry"
         ]
       },
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "reviewStatus": "pending",
       "amadeusAssessment": {
@@ -4172,7 +4790,7 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
@@ -4316,7 +4934,7 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
@@ -4461,7 +5079,7 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
@@ -4614,7 +5232,7 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
@@ -4767,7 +5385,7 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
@@ -4919,7 +5537,7 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
@@ -5080,7 +5698,7 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
@@ -5239,7 +5857,7 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
@@ -5384,7 +6002,7 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
@@ -5530,7 +6148,2135 @@
       },
       "reviewStatus": "pending",
       "letter": "B",
-      "recordVersion": "0.3.0",
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "camellia-sinensis",
+      "commonName": "Chá · chá-verde · chá-preto",
+      "scientificName": "Camellia sinensis",
+      "author": "(L.) Kuntze",
+      "family": "Theaceae",
+      "genus": "Camellia",
+      "epithet": "sinensis",
+      "subspecies": "Nenhuma subespécie atribuída. POWO aceita variedades como var. sinensis e var. assamica; não são automaticamente subespécies nem rótulos de qualquer lote comercial.",
+      "origin": "Nativo do Himalaia oriental ao sul da China e norte da Indochina, incluindo Hainan; cultivo amplamente disseminado.",
+      "habit": "Arbusto ou árvore perenifólia",
+      "description": "Folhas alternas serrilhadas e flores claras com muitos estames ajudam a reconhecer a planta do chá. Chá-preto e chá-verde podem vir da mesma espécie; o processamento e o material vegetal influenciam suas diferenças.",
+      "characteristics": [
+        "Folhas simples alternas e coriáceas",
+        "Flores brancas a levemente rosadas, com estames amarelos",
+        "Cápsulas com sementes relativamente grandes"
+      ],
+      "ecology": "As flores atraem abelhas. Diversidade de genótipos importa para cruzamentos e conservação; substituir paisagens por monocultura não equivale a conservar a comunidade ecológica original.",
+      "conservation": "Sem categoria global auditada. Registrar procedência e diversidade dos acessos; a longa domesticação dificulta interpretar uma ocorrência como silvestre.",
+      "medicinal": {
+        "summary": "Estudos de chá-verde e extratos avaliam marcadores metabólicos; a síntese NCCIH relata efeitos pequenos em alguns desfechos.",
+        "evidence": "clinica-limitada",
+        "limits": "Ensaios não validam qualquer chá ou extrato como prevenção de câncer, emagrecimento garantido ou tratamento universal."
+      },
+      "psychoactive": {
+        "summary": "Cafeína pode promover vigília; ritual cultural e experiência afetiva não constituem efeito farmacológico permanente.",
+        "dependence": "Cafeína admite tolerância e abstinência; o teor varia entre produtos e não se deduz apenas da cor."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Extratos concentrados foram associados a lesão hepática; bebida e suplemento são exposições diferentes.",
+        "symptoms": "Cafeína pode provocar insônia; suplementos podem causar náusea e desconforto abdominal.",
+        "interactions": "NCCIH descreve interações com nadolol, atorvastatina e outros medicamentos; avaliação depende do produto."
+      },
+      "tags": [
+        "Letra C",
+        "chá",
+        "autoincompatibilidade",
+        "folhas"
+      ],
+      "cardSummary": "Uma espécie, diversos chás: folhas, flores, reprodução cruzada e diferenças entre bebida e extrato.",
+      "curiosities": [
+        "Chá-preto e chá-verde não precisam ser espécies distintas: a oxidação durante o processamento é central.",
+        "A planta produz flores e frutos mesmo quando o produto comercial mais conhecido são as folhas.",
+        "Estudos de autoincompatibilidade acompanham tubos polínicos; germinação do pólen não garante fecundação."
+      ],
+      "sources": [
+        {
+          "id": "c1-kew-camellia",
+          "title": "Kew POWO — Camellia sinensis (L.) Kuntze",
+          "url": "https://powo.science.kew.org/taxon/828548-1",
+          "scope": "Nome aceito, autoria, Theaceae/Ericales, distribuição e variedades aceitas; nenhuma variedade é atribuída ao exemplar genérico. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-ncsu-camellia",
+          "title": "NC State Extension — Camellia sinensis",
+          "url": "https://plants.ces.ncsu.edu/plants/camellia-sinensis/common-name/tea-camellia/",
+          "scope": "Folhas alternas serrilhadas, flores, cápsula, atração de abelhas e diversidade de processamento do chá. Reprodução de fotografias da página não realizada. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-nccih-tea",
+          "title": "NCCIH — Green Tea: Usefulness and Safety",
+          "url": "https://www.nccih.nih.gov/health/green-tea",
+          "scope": "Síntese institucional sobre ensaios, pequenos efeitos em alguns marcadores, cafeína, interações e lesão hepática associada principalmente a extratos concentrados; bebida e suplemento não são equivalentes. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-fda-caffeine",
+          "title": "FDA — Spilling the Beans: How Much Caffeine is Too Much?",
+          "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much",
+          "scope": "Orientação institucional: estimulação, variabilidade individual, sintomas de excesso e abstinência de cafeína. Aqui não se fornece dose ou promessa de desempenho. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-tea-incompatibility",
+          "title": "Seth et al. (2019) — Global Transcriptional Insights of Pollen-Pistil Interactions in Tea",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6387076/",
+          "scope": "Microscopia e transcriptômica de dois acessos autoincompatíveis de Camellia sinensis; texto/resumo e métodos consultados. Genes candidatos não equivalem a mecanismo universal comprovado em todo cultivar. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-openstax-cycle",
+          "title": "OpenStax Biology 2e — Pollination and Fertilization",
+          "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+          "scope": "Fundamentos de meiose, gametófitos, polinização, fecundação e formação de sementes; síntese didática original. Não é fonte de cariótipo de acesso nem banco de questões oficiais. Consulta: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c1-kew-camellia",
+          "c1-ncsu-camellia"
+        ],
+        "medicinal": [
+          "c1-nccih-tea"
+        ],
+        "risk": [
+          "c1-nccih-tea",
+          "c1-fda-caffeine"
+        ]
+      },
+      "education": {
+        "id": "camellia-sinensis",
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "angiospermas",
+          "clade": "Eudicotiledôneas",
+          "order": "Ericales",
+          "family": "Theaceae",
+          "rankNote": "Nome, autoria, ordem e família seguem POWO; o clado é uma camada didática. Sem exemplar testemunho, não atribuímos variedade, cultivar ou citótipo."
+        },
+        "morphology": {
+          "habit": "Arbusto lenhoso, podendo atingir porte arbóreo.",
+          "roots": "Raízes ancoram e absorvem recursos do solo.",
+          "stem": "Ramos sustentam brotações colhidas comercialmente.",
+          "leaves": "Folhas coriáceas, alternas e de margens serrilhadas.",
+          "flowers": "Flores com numerosos estames e gineceu.",
+          "fruit": "Fruto seco do tipo cápsula, aberto na maturidade.",
+          "reserveOrgan": "Óleo da semente é reserva; folha colhida não é órgão subterrâneo."
+        },
+        "reproduction": {
+          "cycle": "Gametófitos reduzidos se desenvolvem a partir de esporos; fecundação origina embrião.",
+          "pollination": "Acessos estudados mostraram rejeição do próprio pólen e melhor sucesso de cruzamento; não universalizar cada mecanismo.",
+          "dispersal": "A cápsula expõe sementes; dispersão efetiva requer observação regional.",
+          "vegetative": "Propagação vegetativa mantém clones; cruzamentos recombinam genótipos.",
+          "ploidyNote": "Não se atribui contagem cromossômica ou genótipo a um lote não estudado."
+        },
+        "physiology": {
+          "summary": "Folhas produzem assimilados; novas brotações são drenos e respondem ao ambiente.",
+          "limits": "Sabor não mede diretamente taxa fotossintética nem concentração de substância ativa."
+        },
+        "chemistry": [
+          {
+            "compound": "Catequinas e cafeína",
+            "plantPart": "Folhas e preparações estudadas.",
+            "biologicalRole": "Metabolismo especializado e interação com consumidores.",
+            "researchContext": "Ensaios de produtos específicos.",
+            "limit": "Atividade antioxidante em bancada não demonstra prevenção clínica."
+          }
+        ],
+        "study": {
+          "foundation": "Diferenciar espécie, variedade botânica e produto processado.",
+          "university": "Relacionar tubo polínico e barreiras de autoincompatibilidade.",
+          "expert": "Testar mecanismos em vários acessos, sem igualar expressão gênica a causalidade.",
+          "examTraps": [
+            "Chá-verde não é sinônimo de ausência de cafeína.",
+            "Pólen no estigma não garante fecundação.",
+            "Extrato concentrado não equivale à bebida."
+          ]
+        },
+        "sourceRefs": [
+          "c1-kew-camellia",
+          "c1-ncsu-camellia",
+          "c1-nccih-tea",
+          "c1-fda-caffeine",
+          "c1-tea-incompatibility",
+          "c1-openstax-cycle"
+        ]
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "camellia-sinensis",
+        "path": "assets/images/c/camellia-sinensis.png",
+        "altText": "Ilustração por IA de um ramo da planta do chá com folhas serrilhadas, broto jovem e flor branca com estames amarelos.",
+        "caption": "Planta do chá: broto, folhas e flor em uma ilustração gerada por IA.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: a branch of Camellia sinensis, the tea shrub, with alternate elliptic serrated dark green leaves, a tender pale green shoot and one simple white open flower with many golden yellow stamens. Soft background of tea shrub foliage, fresh morning dew. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2582806,
+        "sha256": "6d90909ef5625ab0cbcac13847034daeaf86abdc8ea02745351d4e64f2230d0d"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "capsicum-annuum",
+      "commonName": "Pimentão · pimentas de Capsicum annuum",
+      "scientificName": "Capsicum annuum",
+      "author": "L.",
+      "family": "Solanaceae",
+      "genus": "Capsicum",
+      "epithet": "annuum",
+      "subspecies": "Nenhuma subespécie atribuída; cultivar e nome comercial não substituem identificação botânica.",
+      "origin": "POWO registra distribuição nativa do sul dos Estados Unidos ao Brasil e Caribe; seleção humana ampliou diversidade e cultivo.",
+      "habit": "Erva ou subarbusto, anual ou perene conforme condições",
+      "description": "A espécie reúne formas doces e pungentes de frutos muito variáveis. Pimentão e determinadas pimentas pertencem a C. annuum; o nome popular pimenta também inclui outras espécies e famílias.",
+      "characteristics": [
+        "Folhas simples e geralmente alternas",
+        "Flores pequenas, frequentemente brancas",
+        "Baga de forma e pungência variáveis entre cultivares"
+      ],
+      "ecology": "Frutos de populações silvestres alimentam aves dispersoras. Em estudo com C. annuum e C. chacoense, remoção monitorada ocorreu por aves; o padrão sustenta hipóteses ecológicas sem atribuir intenção consciente à planta.",
+      "conservation": "Sem categoria IUCN atribuída. Manter variedades e parentes silvestres exige procedência; cultivar doméstico não representa toda a diversidade da espécie.",
+      "medicinal": {
+        "summary": "Capsaicina integra medicamento cutâneo específico aprovado na Europa para dor neuropática periférica em adultos.",
+        "evidence": "clinica-especifica",
+        "limits": "Essa evidência não equivale a efeito analgésico de comer pimenta ou aplicar fruto na pele; produto, via e indicação importam."
+      },
+      "psychoactive": {
+        "summary": "Ardência e resposta emocional a alimentos não comprovam euforia farmacológica ou estado de amor permanente.",
+        "dependence": "Preferência alimentar por ardência não é automaticamente transtorno de dependência; a ficha não estabelece tal diagnóstico."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Capsaicina pode irritar pele e mucosas. Medicamentos concentrados possuem riscos próprios e exigem supervisão.",
+        "symptoms": "Ardor, lacrimejamento e irritação após exposição; a intensidade depende do contexto.",
+        "interactions": "Não se presume segurança de ornamental como alimento nem equivalência entre fruto, suplemento e medicamento."
+      },
+      "tags": [
+        "Letra C",
+        "capsaicina",
+        "dispersão por aves",
+        "diversidade cultivada"
+      ],
+      "cardSummary": "Pimentões e algumas pimentas da mesma espécie: pungência, aves dispersoras e variação de cultivares.",
+      "curiosities": [
+        "Uma só espécie pode incluir frutos doces e muito pungentes; ardência não é critério taxonômico isolado.",
+        "O fruto é uma baga botânica, mesmo quando não é doce.",
+        "Em pesquisa com aves, efeitos da capsaicina na passagem intestinal variaram conforme dispersor e pimenta."
+      ],
+      "sources": [
+        {
+          "id": "c1-kew-capsicum",
+          "title": "Kew POWO — Capsicum annuum L.",
+          "url": "https://powo.science.kew.org/taxon/316944-2",
+          "scope": "Nome aceito, autoria, Solanaceae/Solanales e distribuição ampla do sul dos EUA ao Brasil e Caribe; variedades aceitas não equivalem a todos os nomes comerciais. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-ncsu-capsicum",
+          "title": "NC State Extension — Capsicum annuum",
+          "url": "https://plants.ces.ncsu.edu/plants/capsicum-annuum/common-name/red-pepper/",
+          "scope": "Morfologia, hábito sensível à geada e cultivares de pungência variável. Nome ornamental não garante origem alimentar ou ausência de resíduos. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-ema-capsaicin",
+          "title": "EMA — Qutenza, capsaicina",
+          "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/qutenza",
+          "scope": "Indicação europeia de preparação cutânea específica para dor neuropática periférica em adultos; avaliação regulatória e informação de produto atualizada em 2026. Não valida comer pimenta ou aplicar fruto na pele como tratamento. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-ema-capsaicin-safety",
+          "title": "EMA — Qutenza, informação de produto",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/qutenza-epar-product-information_en.pdf",
+          "scope": "Trechos oficiais indexados de segurança: ardor, irritação e relatos de queimaduras do medicamento; não são estimativas de incidência do alimento nem instruções de aplicação doméstica. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-chili-bird-dispersal",
+          "title": "Levey et al. (2006) — A field test of directed deterrence in two wild chilies",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16896774/",
+          "scope": "Pesquisa primária com C. annuum e C. chacoense: monitoramento e vídeo registraram remoção dos frutos por aves no sistema estudado; resumo consultado. Não se generaliza para todas as aves, mamíferos ou variedades. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-chili-gut-retention",
+          "title": "Tewksbury et al. (2008) — Costs and benefits of capsaicin-mediated control of gut retention",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18376552/",
+          "scope": "Experimentos primários com pimentas silvestres e aves: efeito da capsaicina na retenção de sementes depende de contexto, espécie e morfologia; resumo consultado. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-openstax-cycle",
+          "title": "OpenStax Biology 2e — Pollination and Fertilization",
+          "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+          "scope": "Fundamentos de meiose, gametófitos, polinização, fecundação e formação de sementes; síntese didática original. Não é fonte de cariótipo de acesso nem banco de questões oficiais. Consulta: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c1-kew-capsicum",
+          "c1-ncsu-capsicum"
+        ],
+        "medicinal": [
+          "c1-ema-capsaicin"
+        ],
+        "risk": [
+          "c1-ema-capsaicin-safety",
+          "c1-ncsu-capsicum"
+        ]
+      },
+      "education": {
+        "id": "capsicum-annuum",
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "angiospermas",
+          "clade": "Eudicotiledôneas",
+          "order": "Solanales",
+          "family": "Solanaceae",
+          "rankNote": "Nome, autoria, ordem e família seguem POWO; o clado é uma camada didática. Sem exemplar testemunho, não atribuímos variedade, cultivar ou citótipo."
+        },
+        "morphology": {
+          "habit": "Erva ou subarbusto ramificado, sensível a geadas.",
+          "roots": "Raízes sustentam absorção e estabelecimento da planta.",
+          "stem": "Ramos sustentam flores e frutos; base pode tornar-se lenhosa.",
+          "leaves": "Folhas simples, de margem geralmente inteira.",
+          "flowers": "Flores com anteras e gineceu; forma e cor ajudam na identificação.",
+          "fruit": "Baga com sementes presas a tecidos placentários internos.",
+          "reserveOrgan": "Fruto é órgão reprodutivo; placenta não é semente nem tubérculo."
+        },
+        "reproduction": {
+          "cycle": "Meiose antecede gametófitos; fecundação forma embriões nas sementes.",
+          "pollination": "Flores podem autopolinizar e receber pólen cruzado; taxas dependem do material e dos visitantes.",
+          "dispersal": "Aves podem transportar sementes viáveis; eficiência varia entre sistemas.",
+          "vegetative": "A propagação por sementes envolve recombinação, mesmo entre frutos parecidos.",
+          "ploidyNote": "Sem citótipo ou contagem cromossômica atribuídos nesta ficha."
+        },
+        "physiology": {
+          "summary": "Frutos são drenos que recebem fotoassimilados; maturação altera pigmentos e composição.",
+          "limits": "Cor vermelha não mede sozinha capsaicina; cultivar e ambiente devem ser caracterizados."
+        },
+        "chemistry": [
+          {
+            "compound": "Capsaicinoides",
+            "plantPart": "Tecidos internos do fruto, com distribuição variável.",
+            "biologicalRole": "Interação química com consumidores; não produz ardência igual em todo vertebrado.",
+            "researchContext": "Ecologia de dispersão e farmacologia de TRPV1.",
+            "limit": "Função ecológica não constitui indicação terapêutica do fruto."
+          }
+        ],
+        "study": {
+          "foundation": "Distinguir espécie, cultivar e nome popular.",
+          "university": "Relacionar dispersão, predação de sementes e química do fruto.",
+          "expert": "Comparar hipóteses usando identidade do consumidor, viabilidade e destino das sementes.",
+          "examTraps": [
+            "Nem toda pimenta pertence a C. annuum.",
+            "Baga não é sinônimo de fruto doce.",
+            "Remoção do fruto não prova dispersão eficaz."
+          ]
+        },
+        "sourceRefs": [
+          "c1-kew-capsicum",
+          "c1-ncsu-capsicum",
+          "c1-ema-capsaicin",
+          "c1-ema-capsaicin-safety",
+          "c1-chili-bird-dispersal",
+          "c1-chili-gut-retention",
+          "c1-openstax-cycle"
+        ]
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "capsicum-annuum",
+        "path": "assets/images/c/capsicum-annuum.png",
+        "altText": "Ilustração por IA de uma planta de pimenta com folhas verdes, frutos vermelhos e verdes e pequena flor branca.",
+        "caption": "Pimenta: frutos e flor em uma ilustração gerada por IA; a aparência não determina pungência.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Capsicum annuum, a living compact pepper plant with simple ovate pointed green leaves, several glossy red elongated conical peppers and a few green peppers hanging naturally from their own short pedicels. One small white five-lobed star-shaped blossom at a node. Warm sunlit vegetable garden, blurred soil and foliage. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2954284,
+        "sha256": "68357c460afec690eccda35f9f13682723297b0601ba1984f5a3539699a3a46d"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "carica-papaya",
+      "commonName": "Mamoeiro · mamão",
+      "scientificName": "Carica papaya",
+      "author": "L.",
+      "family": "Caricaceae",
+      "genus": "Carica",
+      "epithet": "papaya",
+      "subspecies": "Nenhuma subespécie atribuída; cultivar e nome comercial não substituem identificação botânica.",
+      "origin": "Área nativa do sul do México à Venezuela no POWO; cultivado e introduzido em numerosas regiões tropicais.",
+      "habit": "Planta arborescente de crescimento rápido",
+      "description": "Folhas grandes, profundamente lobadas, concentram-se no alto do caule marcado por cicatrizes foliares. O porte de árvore não autoriza inferir a mesma anatomia lenhosa de toda eudicotiledônea.",
+      "characteristics": [
+        "Folhas simples palmadamente lobadas",
+        "Caule geralmente pouco ramificado com cicatrizes foliares",
+        "Fruto carnoso do tipo baga, com muitas sementes"
+      ],
+      "ecology": "Folhas, flores e frutos integram redes de consumidores e decompositores. Na conservação, registrar procedência e parentes silvestres; pomar e população nativa não são unidades equivalentes de biodiversidade.",
+      "conservation": "Sem categoria IUCN atribuída. Identificar populações, cultivar e ambiente é necessário antes de decidir coleta, introdução ou manejo.",
+      "medicinal": {
+        "summary": "Papaína é protease de interesse biotecnológico; avaliação EFSA trata de complexo enzimático e uso industrial específicos.",
+        "evidence": "nao-estabelecida",
+        "limits": "A atividade sobre proteínas não demonstra cura por consumo do fruto, sementes ou látex; segurança industrial não valida aplicação doméstica."
+      },
+      "psychoactive": {
+        "summary": "Não há efeito euforizante ou estado Amadeus validado pelas fontes desta ficha.",
+        "dependence": "Dependência psicoativa não estabelecida nesta pesquisa."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Mamão e proteínas do látex podem desencadear alergia; há relatos de anafilaxia em pacientes selecionados com alergia ao látex.",
+        "symptoms": "Urticária, sintomas respiratórios e reação sistêmica são possíveis em pessoas suscetíveis.",
+        "interactions": "A série clínica não estima frequência populacional; alergia ao látex não implica reação inevitável ao fruto."
+      },
+      "tags": [
+        "Letra C",
+        "baga",
+        "expressão sexual",
+        "papaína"
+      ],
+      "cardSummary": "Baga tropical, folhas lobadas e plantas de diferentes tipos sexuais: genética, reprodução e enzimas.",
+      "curiosities": [
+        "Mamoeiros podem apresentar plantas masculinas, femininas ou hermafroditas; não são todos iguais.",
+        "Folhas recortadas continuam sendo simples: lóbulos não são automaticamente folíolos.",
+        "O mamoeiro é modelo de estudo da evolução inicial de cromossomos sexuais, com regiões X e Yh investigadas."
+      ],
+      "sources": [
+        {
+          "id": "c1-kew-carica",
+          "title": "Kew POWO — Carica papaya L.",
+          "url": "https://powo.science.kew.org/taxon/30011248-2",
+          "scope": "Nome aceito, autoria, Caricaceae/Brassicales e distribuição nativa do sul do México à Venezuela; sem atribuição de categoria IUCN. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-ufl-papaya",
+          "title": "UF/IFAS — Papaya Growing in the Florida Home Landscape",
+          "url": "https://edis.ifas.ufl.edu/publication/MG054",
+          "scope": "Síntese institucional sobre hábito arborescente, folhas, baga, plantas masculinas/femininas/hermafroditas e propagação por sementes; trechos indexados consultados, sem transpor calendário da Flórida para o Brasil. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-efsa-papain",
+          "title": "EFSA FEZ (2026) — Safety evaluation of the food enzyme papain from Carica papaya latex",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41536844/",
+          "scope": "Avaliação institucional de complexo enzimático industrial específico e exposição prevista; risco alérgico não excluído. Resumo consultado, sem extrapolação para látex doméstico, feridas ou extratos medicinais. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-papaya-allergy",
+          "title": "Rojas-Mandujano et al. (2018) — Latex-papaya syndrome",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29723936/",
+          "scope": "Série observacional selecionada de 11 pacientes com alergia ao látex e anafilaxia ao mamão; resumo consultado. Não estima prevalência em consumidores nem implica reação em toda pessoa alérgica a látex. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-papaya-sex-genome",
+          "title": "Wang et al. (2012) — Sequencing papaya X and Yh chromosomes",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3427123/",
+          "scope": "Pesquisa primária sobre regiões ligadas ao sexo e evolução de cromossomos sexuais do mamoeiro; resumo consultado. A ficha não atribui genótipo a uma fotografia. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-openstax-cycle",
+          "title": "OpenStax Biology 2e — Pollination and Fertilization",
+          "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+          "scope": "Fundamentos de meiose, gametófitos, polinização, fecundação e formação de sementes; síntese didática original. Não é fonte de cariótipo de acesso nem banco de questões oficiais. Consulta: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c1-kew-carica",
+          "c1-ufl-papaya"
+        ],
+        "medicinal": [
+          "c1-efsa-papain"
+        ],
+        "risk": [
+          "c1-efsa-papain",
+          "c1-papaya-allergy"
+        ]
+      },
+      "education": {
+        "id": "carica-papaya",
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "angiospermas",
+          "clade": "Eudicotiledôneas",
+          "order": "Brassicales",
+          "family": "Caricaceae",
+          "rankNote": "Nome, autoria, ordem e família seguem POWO; o clado é uma camada didática. Sem exemplar testemunho, não atribuímos variedade, cultivar ou citótipo."
+        },
+        "morphology": {
+          "habit": "Planta arborescente de vida relativamente curta em cultivo.",
+          "roots": "Raízes absorvem água; encharcamento compromete o sistema.",
+          "stem": "Caule pouco ramificado, com cicatrizes de folhas anteriores.",
+          "leaves": "Folhas simples, alternas e palmadamente lobadas.",
+          "flowers": "Flores estaminadas, pistiladas ou bissexuadas conforme o tipo de planta.",
+          "fruit": "Baga com sementes numerosas em cavidade central.",
+          "reserveOrgan": "Polpa é parte do fruto; semente não é tubérculo."
+        },
+        "reproduction": {
+          "cycle": "Gametófitos permanecem reduzidos nas estruturas florais; semente resulta do processo sexuado.",
+          "pollination": "Plantas femininas requerem fonte de pólen; plantas hermafroditas podem produzir seus próprios gametas masculinos.",
+          "dispersal": "Frutos carnosos permitem transporte por consumidores e pessoas, sem vetor universal presumido.",
+          "vegetative": "Propagação usual por sementes não produz clones geneticamente idênticos.",
+          "ploidyNote": "Nenhuma contagem cromossômica é inferida do aspecto do fruto."
+        },
+        "physiology": {
+          "summary": "Crescimento e frutificação dependem de assimilação foliar, água e temperatura; ambiente também afeta expressão floral.",
+          "limits": "Cor ou formato do fruto não identificam sozinhos genótipo sexual ou qualidade medicinal."
+        },
+        "chemistry": [
+          {
+            "compound": "Papaína e outras cisteíno-proteases",
+            "plantPart": "Látex de frutos imaturos estudado.",
+            "biologicalRole": "Clivagem de proteínas; funções biológicas e aplicações são contextuais.",
+            "researchContext": "Complexos enzimáticos industriais caracterizados.",
+            "limit": "Enzima ativa não equivale a medicamento eficaz ou ausência de alergenicidade."
+          }
+        ],
+        "study": {
+          "foundation": "Distinguir folhas simples lobadas de folhas compostas.",
+          "university": "Comparar monoicia, dioicia e tipos sexuais do mamoeiro.",
+          "expert": "Relacionar genótipo, expressão sexual e ambiente sem identificar genoma pela fotografia.",
+          "examTraps": [
+            "Lóbulo não é folíolo.",
+            "Plantas arborescentes podem diferir na formação de madeira.",
+            "Presença de papaína não comprova tratamento humano."
+          ]
+        },
+        "sourceRefs": [
+          "c1-kew-carica",
+          "c1-ufl-papaya",
+          "c1-efsa-papain",
+          "c1-papaya-allergy",
+          "c1-papaya-sex-genome",
+          "c1-openstax-cycle"
+        ]
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "carica-papaya",
+        "path": "assets/images/c/carica-papaya.png",
+        "altText": "Ilustração por IA de um mamoeiro com folhas palmadamente lobadas e frutos junto ao alto do caule.",
+        "caption": "Mamoeiro com frutos: ilustração gerada por IA.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Carica papaya, a papaya plant with a single upright pale trunk carrying visible leaf scars, large deeply palmately lobed green leaves on long petioles at the crown, and several green oblong papayas attached close to the upper trunk, one beginning to turn golden orange. A small garden with softly blurred green background. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 3171385,
+        "sha256": "471e8a851b6347bacc1c0ee675c2a02d9c4ad82103150183c285fc4e4edb3c95"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "cedrus-libani",
+      "commonName": "Cedro-do-líbano",
+      "scientificName": "Cedrus libani",
+      "author": "A.Rich.",
+      "family": "Pinaceae",
+      "genus": "Cedrus",
+      "epithet": "libani",
+      "subspecies": "Nenhuma subespécie atribuída; ficha da espécie, sem exemplar identificado.",
+      "origin": "Distribuição nativa de sul da Turquia ao Líbano no POWO. Outros cedros e nomes históricos infraespecíficos devem ser consultados no backbone, sem os fundir automaticamente.",
+      "habit": "Conífera arbórea perenifólia",
+      "description": "Conífera de acículas e cones eretos, com ramos que se tornam amplamente horizontais. Produz sementes nuas, sem flores e sem frutos botânicos.",
+      "characteristics": [
+        "Acículas em ramos longos e curtos",
+        "Cones femininos lenhosos e eretos",
+        "Arquitetura da copa muda com idade e condições de crescimento"
+      ],
+      "ecology": "Como árvore florestal, cria estrutura e sombra e participa dos estoques e fluxos de carbono. A fonte de extensão registra pequenos mamíferos associados aos cones, em seu contexto regional; a rede ecológica nativa exige levantamento próprio.",
+      "conservation": "Categoria global não verificada diretamente. Conservar populações, regeneração e diversidade de procedências; plantar exemplares ornamentais em outro país não recompõe uma floresta nativa.",
+      "medicinal": {
+        "summary": "A pesquisa selecionada aborda botânica, anatomia e ecologia; não estabelece indicação medicinal humana para casca, resina, acículas ou essência.",
+        "evidence": "nao-estabelecida",
+        "limits": "Cedro é nome de plantas de famílias diferentes. Resultado de outra espécie ou de um produto comercial não é evidência aplicável a Cedrus libani."
+      },
+      "psychoactive": {
+        "summary": "Euforia ou amor permanente pelo consumo não foram estabelecidos.",
+        "dependence": "Dependência não estabelecida nesta pesquisa; lacuna não certifica segurança."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "A ficha não estabelece segurança de ingestão ou uso de óleos. O aroma e o uso da madeira não constituem avaliação toxicológica.",
+        "symptoms": "Síndrome de intoxicação humana não definida nesta pesquisa; ausência de descrição não equivale a ausência de risco.",
+        "interactions": "Interações medicamentosas e exposição a preparações concentradas não foram avaliadas pelas fontes botânicas selecionadas."
+      },
+      "tags": [
+        "Letra C",
+        "gimnospermas",
+        "Pinaceae"
+      ],
+      "cardSummary": "Conífera mediterrânea de acículas e cones: sementes nuas e crescimento secundário.",
+      "curiosities": [
+        "Seu cone lenhoso não é fruto: sementes nuas significam ausência de ovário envolvendo os óvulos, e não ausência de tegumento na semente.",
+        "O cedro-do-líbano pertence à Pinaceae; o cedro brasileiro do gênero Cedrela pertence à família de angiospermas Meliaceae.",
+        "Pesquisa de formação de xilema comparou altitudes e períodos de crescimento: anéis de madeira registram atividade do câmbio em condições particulares."
+      ],
+      "sources": [
+        {
+          "id": "c2-kew-cedrus",
+          "title": "Kew POWO — Cedrus libani A.Rich.",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:676705-1",
+          "scope": "Nome aceito, Pinales/Pinaceae, sinônimos e distribuição nativa. Taxonomia atual separa espécies relacionadas; não se atribui subespécie a exemplar. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-ncsu-cedrus",
+          "title": "NC State Extension — Cedrus libani",
+          "url": "https://plants.ces.ncsu.edu/plants/cedrus-libani/",
+          "scope": "Hábito, acículas, cones e fauna em contexto de horticultura. Campos automáticos chamados fruit/flower não significam fruto/flor botânicos em coníferas; a distribuição segue POWO. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-cedrus-xylogenesis",
+          "title": "Güney et al. (2015) — Cambial activity and xylogenesis in stems of Cedrus libani at different altitudes",
+          "url": "https://link.springer.com/article/10.1186/s40529-015-0100-z",
+          "scope": "Artigo experimental sobre formação do xilema em diferentes altitudes; resumo e trechos acessíveis consultados. Relações sazonais locais não definem calendário universal ou tolerância fixa à seca. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-os-gymnosperms",
+          "title": "OpenStax Biology 2e — Gymnosperms",
+          "url": "https://openstax.org/books/biology-2e/pages/26-2-gymnosperms",
+          "scope": "Princípios gerais de sementes nuas, cones, pólen e ciclo de coníferas. Síntese original, sem reprodução de figuras; comparação entre grupos não é identificação individual. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-kew-cedrela",
+          "title": "Kew POWO — Cedrela P.Browne",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30014434-2",
+          "scope": "Gênero aceito de Meliaceae/Sapindales, usado somente para comparar o nome popular cedro com Cedrus. Não é uma nova ficha de espécie. Consulta: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c2-kew-cedrus",
+          "c2-ncsu-cedrus",
+          "c2-kew-cedrela"
+        ],
+        "medicinal": [
+          "c2-kew-cedrus",
+          "c2-ncsu-cedrus"
+        ],
+        "risk": [
+          "c2-ncsu-cedrus"
+        ]
+      },
+      "education": {
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "gimnospermas",
+          "clade": "Coníferas",
+          "division": "Streptophyta (filo no backbone POWO)",
+          "class": "Equisetopsida (circunscrição ampla do POWO)",
+          "order": "Pinales",
+          "family": "Pinaceae",
+          "rankNote": "Nome aceito no POWO; não se atribui subespécie. Circunscrições históricas de cedros diferem das atuais."
+        },
+        "morphology": {
+          "habit": "Árvore lenhosa com acículas persistentes.",
+          "roots": "Raízes verdadeiras vascularizadas fixam e abastecem a árvore.",
+          "stem": "Tronco com crescimento secundário; câmbio produz xilema e floema secundários.",
+          "leaves": "Acículas estreitas; sua forma não permite deduzir tolerância ilimitada à seca.",
+          "flowers": "Cones poliníferos e ovulíferos; não flores de angiospermas.",
+          "fruit": "Não há fruto botânico: cones sustentam estruturas reprodutivas.",
+          "reserveOrgan": "Madeira é principalmente xilema secundário, não um tubérculo."
+        },
+        "reproduction": {
+          "cycle": "O esporófito arbóreo 2n produz esporos por meiose. Gametófitos reduzidos desenvolvem-se associados às estruturas reprodutivas; fecundação gera embrião na semente.",
+          "pollination": "Pólen transportado pelo vento alcança a região ovular; não há estigma floral.",
+          "dispersal": "Sementes aladas são compatíveis com dispersão pelo vento; alcance depende do ambiente.",
+          "vegetative": "A fonte de extensão registra propagação por sementes; clonagem não é presumida para todo material.",
+          "ploidyNote": "n/2n descrevem fases; não se atribui contagem cromossômica ao material não examinado."
+        },
+        "physiology": {
+          "summary": "Traqueídes do xilema participam da condução hídrica e sustentação. A formação sazonal de madeira foi estudada em diferentes altitudes.",
+          "limits": "Um experimento local não fornece calendário universal de crescimento nem limite hidráulico para todo Cedrus."
+        },
+        "chemistry": [
+          {
+            "compound": "Celulose e lignina da madeira",
+            "plantPart": "Xilema secundário.",
+            "biologicalRole": "Parede celular e resistência mecânica.",
+            "researchContext": "Pesquisa anatômica de diferenciação e formação do lenho.",
+            "limit": "Lignificação e aroma não demonstram atividade terapêutica ou segurança de essências."
+          }
+        ],
+        "study": {
+          "foundation": "Comparar cone, semente e fruto.",
+          "university": "Relacionar câmbio, traqueídes e crescimento secundário.",
+          "expert": "Interpretar séries de microamostras de lenho junto a altitude, clima e fenologia.",
+          "examTraps": [
+            "Semente nua pode ter tegumento.",
+            "Conífera não tem fruto nem estigma.",
+            "Nome popular não determina parentesco."
+          ]
+        },
+        "sourceRefs": [
+          "c2-kew-cedrus",
+          "c2-ncsu-cedrus",
+          "c2-cedrus-xylogenesis",
+          "c2-os-gymnosperms",
+          "c2-kew-cedrela"
+        ],
+        "id": "cedrus-libani"
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "cedrus-libani",
+        "path": "assets/images/c/cedrus-libani.png",
+        "altText": "Ilustração por IA de um ramo de cedro-do-líbano com folhas aciculares em rosetas e cone ereto.",
+        "caption": "Cedro-do-líbano: folhas e cone de gimnosperma em uma ilustração gerada por IA.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Cedrus libani, cedar of Lebanon, a close natural branch of a mature conifer, many stiff dark green needle leaves in dense rosettes on short shoots, woody bark, one upright barrel-shaped gray-green seed cone firmly attached on top of a branch. Soft background suggests the characteristic broad horizontal tiered branches of a majestic cedar in mountain sunlight. No flowers, no berries, no fruits, no fan leaves; cone stands upright, not hanging like a pine cone. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 3457757,
+        "sha256": "257e74353aa16970625592bb3d02da75a2e9a4cefa2c4363e221585cb30005e3"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "ceratodon-purpureus",
+      "commonName": "Musgo-de-setas-purpúreas · fire moss",
+      "scientificName": "Ceratodon purpureus",
+      "author": "(Hedw.) Brid.",
+      "family": "Ceratodontaceae",
+      "genus": "Ceratodon",
+      "epithet": "purpureus",
+      "subspecies": "Nenhuma subespécie atribuída; ficha da espécie, sem exemplar identificado.",
+      "origin": "Musgo de distribuição ampla. WFO agrega registros brasileiros e floras de outras regiões; a ocorrência exata de um tufo exige identificação microscópica e procedência.",
+      "habit": "Musgo em tufos ou tapetes",
+      "description": "Pequeno musgo com filídios estreitos e esporófitos frequentemente de setas avermelhadas. Sem xilema e floema verdadeiros; o tapete verde é predominantemente gametófito.",
+      "characteristics": [
+        "Filídios podem ficar contorcidos quando secos",
+        "Setas sustentam cápsulas de esporos",
+        "Rizoides fixam ao substrato; não são raízes vasculares"
+      ],
+      "ecology": "Coloniza substratos perturbados, inclusive áreas queimadas, por dispersão de esporos. FEIS descreve contribuição à cobertura e retenção do solo e posterior substituição por outras plantas. Essas relações dependem de clima e comunidade; não justificam provocar incêndios.",
+      "conservation": "Sem categoria IUCN global atribuída. Registrar substrato, umidade e perturbação; espécie amplamente distribuída pode conter diversidade populacional relevante para conservação e pesquisa.",
+      "medicinal": {
+        "summary": "Não há uso medicinal humano estabelecido nas fontes selecionadas de flora, ecologia e genômica.",
+        "evidence": "nao-estabelecida",
+        "limits": "Crescer em local poluído não torna o musgo descontaminante comestível. Pesquisa genética não valida ingestão, cosmético ou essência."
+      },
+      "psychoactive": {
+        "summary": "Euforia ou amor permanente pelo consumo não foram estabelecidos.",
+        "dependence": "Dependência não estabelecida nesta pesquisa; lacuna não certifica segurança."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Segurança de consumo não investigada aqui. Procedência ambiental e identificação são lacunas, especialmente em tufos de solo contaminado.",
+        "symptoms": "Não se atribui quadro específico de intoxicação a partir de estudos ecológicos; exposições ambientais requerem avaliação própria.",
+        "interactions": "Não foram estudadas interações com medicamentos; resultados genômicos não suprem estudos toxicológicos."
+      },
+      "tags": [
+        "Letra C",
+        "briofitas",
+        "Ceratodontaceae"
+      ],
+      "cardSummary": "Musgo de setas avermelhadas: gametófito dominante, colonização e cromossomos sexuais UV.",
+      "curiosities": [
+        "Fire moss descreve a colonização após fogo: os indivíduos presentes podem ser mortos pelo incêndio e a área ser recolonizada por esporos externos.",
+        "Seu sistema sexual UV é estudado por genômica: gametófitos masculinos e femininos são haploides, o que difere do exemplo humano diploide XY.",
+        "Mudanças de umidade podem torcer setas e modificar a liberação de esporos; movimento físico não é automaticamente ritmo circadiano."
+      ],
+      "sources": [
+        {
+          "id": "c2-wfo-ceratodon",
+          "title": "World Flora Online — Ceratodon purpureus (Hedw.) Brid.",
+          "url": "https://www.worldfloraonline.org/taxon/wfo-0001180270",
+          "scope": "Registro atual, autoria e classificação Bryophyta/Bryopsida/Pottiales/Ceratodontaceae; descrições agregadas da Flora of North America. Floras antigas usam Ditrichaceae/Dicranales. Subespécies listadas não são atribuídas ao material. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-forest-ceratodon",
+          "title": "US Forest Service FEIS — Ceratodon purpureus, fire moss",
+          "url": "https://research.fs.usda.gov/feis/species-reviews/cerpur",
+          "scope": "Síntese institucional com estudos de sucessão e fogo: colonização por esporos, protonema, umidade e metais. Evidência histórica sobretudo extratropical; não sustenta o uso de fogo para cultivar musgos. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-ceratodon-genome",
+          "title": "Carey et al. (2021) — Gene-rich UV sex chromosomes harbor conserved regulators of sexual development",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34193417/",
+          "scope": "Artigo original, Science Advances, DOI 10.1126/sciadv.abh2488. Registro, resumo e legendas consultados: genomas de gametófitos masculino/feminino e cromossomos UV; não é estudo toxicológico. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-os-mosses",
+          "title": "OpenStax Biology 2e — Bryophytes",
+          "url": "https://openstax.org/books/biology-2e/pages/25-3-bryophytes",
+          "scope": "Princípios de gametófito dominante, rizoides, protonema e esporófito ligado ao gametófito. Síntese própria, sem copiar imagens ou avaliações; n/2n representam fases. Consulta editorial: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c2-wfo-ceratodon",
+          "c2-forest-ceratodon"
+        ],
+        "medicinal": [
+          "c2-wfo-ceratodon",
+          "c2-ceratodon-genome"
+        ],
+        "risk": [
+          "c2-forest-ceratodon",
+          "c2-ceratodon-genome"
+        ]
+      },
+      "education": {
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "briofitas",
+          "clade": "Musgos (Bryophyta)",
+          "division": "Bryophyta",
+          "class": "Bryopsida",
+          "order": "Pottiales",
+          "family": "Ceratodontaceae",
+          "rankNote": "Segue o WFO consultado. Ditrichaceae/Dicranales em literatura histórica refletem outra circunscrição; não foram silenciosamente misturados. Subespécies não atribuídas."
+        },
+        "morphology": {
+          "habit": "Tufos ou tapetes de gametófitos.",
+          "roots": "Rizoides de fixação, sem raízes verdadeiras.",
+          "stem": "Caulídios pequenos; não caules de árvores vasculares.",
+          "leaves": "Filídios com costa e caracteres celulares úteis à identificação.",
+          "flowers": "Gametângios, sem flores, pólen ou óvulos.",
+          "fruit": "Cápsula é esporângio, não fruto.",
+          "reserveOrgan": "Protonema e fragmentos não são tubérculos."
+        },
+        "reproduction": {
+          "cycle": "Gametófitos n formam gametas por mitose. Fecundação produz zigoto 2n; esporófito ligado ao gametófito feminino forma esporos n por meiose na cápsula.",
+          "pollination": "Não há polinização. Água permite deslocamento dos anterozoides até o arquegônio.",
+          "dispersal": "Esporos dispersos pelo vento podem germinar em protonema; estabelecimento depende do microambiente.",
+          "vegetative": "Crescimento de protonema e fragmentação podem multiplicar linhagens sem fecundação.",
+          "ploidyNote": "n/2n descrevem fases; não se atribui contagem cromossômica ao material não examinado."
+        },
+        "physiology": {
+          "summary": "A hidratação do pequeno corpo e da superfície controla atividade fisiológica; resposta à secagem não equivale à condução vascular de uma árvore.",
+          "limits": "Não há xilema/floema verdadeiros. Tolerância e crescimento em poluição não autorizam uso alimentar ou inferência de mecanismo universal."
+        },
+        "chemistry": [
+          {
+            "compound": "DNA e regulação do desenvolvimento; nenhuma essência medicinal caracterizada",
+            "plantPart": "Genomas de gametófitos em pesquisa.",
+            "biologicalRole": "Regulação do desenvolvimento, distinta de uma essência botânica.",
+            "researchContext": "Estudo de cromossomos UV e evolução de regiões sem recombinação.",
+            "limit": "DNA e presença de genes não são demonstração de benefício clínico."
+          }
+        ],
+        "study": {
+          "foundation": "Localizar gametófito n e esporófito 2n.",
+          "university": "Relacionar meiose, protonema e dependência do esporófito.",
+          "expert": "Comparar sistemas UV e XY sem confundir fase haploide com número de cromátides.",
+          "examTraps": [
+            "Cápsula de musgo não é fruto.",
+            "Gametas não surgem por meiose no gametófito.",
+            "Nome associado ao fogo não significa resistência direta às chamas."
+          ]
+        },
+        "sourceRefs": [
+          "c2-wfo-ceratodon",
+          "c2-forest-ceratodon",
+          "c2-ceratodon-genome",
+          "c2-os-mosses"
+        ],
+        "id": "ceratodon-purpureus"
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "ceratodon-purpureus",
+        "path": "assets/images/c/ceratodon-purpureus.png",
+        "altText": "Ilustração por IA de uma pequena colônia de musgo com filídios verdes e esporófitos de hastes avermelhadas portando cápsulas.",
+        "caption": "Musgo com esporófitos: ilustração gerada por IA; as cápsulas não são flores nem frutos.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Ceratodon purpureus, a small moss colony in close macro view on rough damp mineral soil and a stone edge. Dense low green gametophyte tufts with tiny narrow lanceolate leaflike phyllids; many slender red to purplish upright sporophyte stalks (setae), each bearing one small brownish red cylindrical capsule, some gently inclined, rising above the moss cushion. Clearly a tiny bryophyte micro-landscape, delicate droplets, soft morning light, vivid green and burgundy textures. No flowers, no petals, no berries, no fruit, no fern fronds, no seed plants, no arrows or labels. Sporophytes should resemble botanical moss capsules, not mushrooms or blossoms. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 3181424,
+        "sha256": "88adceed50c91af81d98e54ba49c1a366f91f8ebc2d6b1879d76ed81a155f411"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "cinnamomum-verum",
+      "commonName": "Canela-do-ceilão · canela-verdadeira",
+      "scientificName": "Cinnamomum verum",
+      "author": "J.Presl",
+      "family": "Lauraceae",
+      "genus": "Cinnamomum",
+      "epithet": "verum",
+      "subspecies": "Nenhuma subespécie atribuída; ficha da espécie, sem exemplar identificado.",
+      "origin": "Nativa de Sri Lanka no POWO; cultivada e introduzida em outras regiões tropicais. A origem de um produto comercial requer rastreio próprio.",
+      "habit": "Árvore perenifólia aromática",
+      "description": "Árvore de folhas coriáceas e pequenas flores claras; a especiaria é casca, não raiz nem fruto. Fotografias não distinguem com segurança todas as canelas comerciais.",
+      "characteristics": [
+        "Folhas com nervuras basais marcadas",
+        "Brotações podem ser avermelhadas antes de verdes",
+        "Pequenas flores em panículas; fruto carnoso com uma semente"
+      ],
+      "ecology": "Relaciona-se com visitantes florais e dispersores animais. NParks registra atração de aves e hospedagem de borboletas; frequência e parceiros efetivos dependem do local. Cultivo fora da área nativa exige avaliar dispersão e impacto.",
+      "conservation": "Categoria global não auditada diretamente. Preservar árvores, procedência e habitat; retirar casca de um tronco pode lesar tecidos essenciais e não é uma prática de catalogamento.",
+      "medicinal": {
+        "summary": "Há estudos de canela para desfechos metabólicos e de óleos contra microrganismos; a síntese NCCIH não estabelece benefício terapêutico geral comprovado.",
+        "evidence": "clinica-limitada",
+        "limits": "Espécie, órgão e preparação variam. C. verum, canelas chamadas cassia e seus óleos não são produtos intercambiáveis; não substituir tratamento de diabetes ou infecção."
+      },
+      "psychoactive": {
+        "summary": "Euforia ou amor permanente pelo consumo não foram estabelecidos.",
+        "dependence": "Dependência não estabelecida nesta pesquisa; lacuna não certifica segurança."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Irritação e alergias podem ocorrer. A discussão de cumarina e fígado é especialmente relevante às canelas cassia; não transferir automaticamente seus teores ou riscos a C. verum.",
+        "symptoms": "Ardor, irritação de pele ou mucosa e sintomas digestivos são possibilidades conforme a exposição.",
+        "interactions": "Aromas e extratos concentrados exigem avaliação própria; composição não é determinada por fotografia ou nome comercial."
+      },
+      "tags": [
+        "Letra C",
+        "angiospermas",
+        "Lauraceae"
+      ],
+      "cardSummary": "Árvore aromática de Sri Lanka: casca condimentar, frutos carnosos e diversidade química.",
+      "curiosities": [
+        "A canela culinária corresponde a tecidos do caule: o aroma não transforma a casca em uma espécie de raiz.",
+        "Lauraceae pertence às magnoliídeas: angiospermas não se resumem a monocotiledôneas e eudicotiledôneas.",
+        "Materiais de C. verum estudados no Maranhão apresentaram perfis químicos muito diferentes entre locais e órgãos; espécie igual não significa óleo idêntico."
+      ],
+      "sources": [
+        {
+          "id": "c2-kew-cinnamomum",
+          "title": "Kew POWO — Cinnamomum verum J.Presl",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:463752-1",
+          "scope": "Nome aceito, autoria, Laurales/Lauraceae, sinônimos e distribuição no backbone. Usos agregados não são comprovação clínica. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-nparks-cinnamomum",
+          "title": "NParks — Cinnamomum verum",
+          "url": "https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2807",
+          "scope": "Morfologia, folhas juvenis, drupa e associação com fauna. Usado apenas para botânica e ecologia descrita, sem adotar alegações terapêuticas do agregador. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-nccih-cinnamon",
+          "title": "NIH/NCCIH — Cinnamon: Usefulness and Safety",
+          "url": "https://www.nccih.nih.gov/health/cinnamon",
+          "scope": "Síntese institucional sobre ausência de conclusão terapêutica geral, alergia/irritação e diferença entre Ceylon cinnamon e cassia em cumarina. Não atribui o risco de cassia automaticamente a C. verum. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-cinnamomum-chemotypes",
+          "title": "Farias et al. (2020) — Chemical composition and biological activities of two chemotype-oils from Cinnamomum verum growing in North Brazil",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32728267/",
+          "scope": "Resumo descreve análises químicas e antifúngicas de materiais do Maranhão, com forte variação entre locais e órgãos. Apesar do rótulo Review no índice, há dados experimentais no resumo; não é ensaio clínico. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-os-flowering",
+          "title": "OpenStax Biology 2e — Pollination and Fertilization",
+          "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+          "scope": "Princípios gerais de alternância de gerações e fecundação de angiospermas, em síntese própria. Não define citótipo, polinizador efetivo ou rendimento de sementes de cada acesso; sem copiar figuras/exercícios. Consulta editorial: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c2-kew-cinnamomum",
+          "c2-nparks-cinnamomum"
+        ],
+        "medicinal": [
+          "c2-nccih-cinnamon",
+          "c2-cinnamomum-chemotypes"
+        ],
+        "risk": [
+          "c2-nccih-cinnamon"
+        ]
+      },
+      "education": {
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "angiospermas",
+          "clade": "Magnoliídeas",
+          "division": "Streptophyta (filo no backbone POWO)",
+          "class": "Equisetopsida (circunscrição ampla do POWO)",
+          "order": "Laurales",
+          "family": "Lauraceae",
+          "rankNote": "POWO e filogenia atual: magnoliídeas é clado, não subespécie; a nomenclatura binomial deriva da tradição de Linneu."
+        },
+        "morphology": {
+          "habit": "Árvore com ramificação e copa persistente.",
+          "roots": "Raízes verdadeiras vascularizadas.",
+          "stem": "Caule lenhoso com casca e crescimento secundário.",
+          "leaves": "Lâminas simples, coriáceas, de nervuras basais evidentes.",
+          "flowers": "Flores pequenas e claras agrupadas em panículas.",
+          "fruit": "Fruto carnoso, descrito como drupa no NParks.",
+          "reserveOrgan": "A casca comercial não é tubérculo nem bulbo."
+        },
+        "reproduction": {
+          "cycle": "O esporófito 2n forma esporos n por meiose; deles derivam gametófitos reduzidos. Fecundação origina embrião protegido na semente.",
+          "pollination": "Transporte de pólen envolve fauna; visitante não equivale automaticamente a polinizador eficaz.",
+          "dispersal": "Frutos carnosos favorecem dispersão por animais; verificar vetores locais.",
+          "vegetative": "Não confundir rebrota com produção de descendência por sementes.",
+          "ploidyNote": "n/2n descrevem fases; não se atribui contagem cromossômica ao material não examinado."
+        },
+        "physiology": {
+          "summary": "Xilema abastece folhas de água; floema exporta fotoassimilados e também nutre tecidos em crescimento. A casca não é fisiologicamente inerte.",
+          "limits": "Não foram medidos fluxo de seiva, fotossíntese ou ritmo circadiano deste exemplar."
+        },
+        "chemistry": [
+          {
+            "compound": "Cinamaldeído, eugenol e outros voláteis",
+            "plantPart": "Casca e folhas de materiais estudados.",
+            "biologicalRole": "Metabólitos especializados; função ecológica específica requer teste.",
+            "researchContext": "Análise química e ensaios antifúngicos experimentais.",
+            "limit": "Atividade em placa e composição de dois materiais não demonstram eficácia clínica nem padronização universal."
+          }
+        ],
+        "study": {
+          "foundation": "Distinguir casca, fruto e semente.",
+          "university": "Comparar magnoliídeas e eudicotiledôneas sem usar dicotiledônea como clado único.",
+          "expert": "Associar voucher, órgão, procedência e perfil químico à amostra.",
+          "examTraps": [
+            "Canela não identifica uma única espécie.",
+            "Pólen é gametófito, não o gameta isolado.",
+            "Fruto deriva de estruturas florais; casca comercial não é fruto."
+          ]
+        },
+        "sourceRefs": [
+          "c2-kew-cinnamomum",
+          "c2-nparks-cinnamomum",
+          "c2-nccih-cinnamon",
+          "c2-cinnamomum-chemotypes",
+          "c2-os-flowering"
+        ],
+        "id": "cinnamomum-verum"
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "cinnamomum-verum",
+        "path": "assets/images/c/cinnamomum-verum.png",
+        "altText": "Ilustração por IA de um ramo de caneleira com folhas de nervuras longitudinais evidentes e folhas jovens acobreadas.",
+        "caption": "Caneleira: folhas e brotação jovem em uma ilustração gerada por IA.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Cinnamomum verum, true cinnamon, a single leafy branch of a living tree; opposite or subopposite simple smooth-edged ovate-elliptic leaves, each with three prominent longitudinal veins running from near the leaf base toward the tip; fresh copper-red young leaves near the shoot tip, mature glossy green leaves, a natural mottled brown trunk partially visible behind. Tropical light after rain. Focus on the distinctive leaf venation and the living tree; no cinnamon sticks or spice products. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 3038543,
+        "sha256": "d79675a34f4e1b74ca3d7e7c4eb6937f2688592e4673e9e37a5454766a889f01"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "clitoria-ternatea",
+      "commonName": "Clitória · feijão-borboleta",
+      "scientificName": "Clitoria ternatea",
+      "author": "L.",
+      "family": "Fabaceae",
+      "genus": "Clitoria",
+      "epithet": "ternatea",
+      "subspecies": "Nenhuma subespécie atribuída; ficha da espécie, sem exemplar identificado.",
+      "origin": "Distribuição tropical ampla, incluindo introdução no Brasil segundo POWO. Presença atual não resolve limites da área nativa.",
+      "habit": "Trepadeira herbácea perene",
+      "description": "Trepadeira de folhas compostas e flores marcantes, muitas vezes azuis. Produz vagens; a cor das pétalas varia entre linhagens e não identifica sozinha uma subespécie.",
+      "characteristics": [
+        "Folhas compostas pinadas",
+        "Flores de simetria bilateral",
+        "Frutos secos do tipo legume, com sementes"
+      ],
+      "ecology": "Flores recebem insetos, e a associação de leguminosas com microrganismos simbiontes permite fixação de N₂. A raiz fornece ambiente e carbono; não fixa nitrogênio sozinha. Nodulação e contribuição ao solo dependem de parceiros e condições.",
+      "conservation": "Categoria global não auditada. Evitar introduções sem avaliação local: utilidade ornamental ou agronômica não garante neutralidade ecológica em qualquer ambiente.",
+      "medicinal": {
+        "summary": "Um pequeno ensaio agudo em homens saudáveis avaliou respostas pós-prandiais e marcadores antioxidantes de uma preparação floral experimental.",
+        "evidence": "clinica-limitada",
+        "limits": "Resultado agudo não comprova prevenção ou tratamento de diabetes, melhora de memória ou benefício duradouro. Não extrapolar de pétalas a raízes, sementes ou qualquer extrato."
+      },
+      "psychoactive": {
+        "summary": "Euforia ou amor permanente pelo consumo não foram estabelecidos.",
+        "dependence": "Dependência não estabelecida nesta pesquisa; lacuna não certifica segurança."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Segurança depende de parte, preparação e procedência. A cor atraente e o histórico alimentar de flores não validam todas as partes ou suplementos.",
+        "symptoms": "A seleção não define síndrome toxicológica universal. Identificação equivocada e reações individuais permanecem possíveis.",
+        "interactions": "Ensaios agudos não resolvem interações medicamentosas ou segurança prolongada; atividade de peptídeos isolados não permite prever exposição humana."
+      },
+      "tags": [
+        "Letra C",
+        "angiospermas",
+        "Fabaceae"
+      ],
+      "cardSummary": "Trepadeira de flores azuis: vagens, pigmentos sensíveis ao pH e simbiose radicular.",
+      "curiosities": [
+        "Antocianinas florais mudam propriedades espectrais conforme o pH; mudança de cor envolve equilíbrio químico, não nascimento de uma nova espécie.",
+        "Ciclotídeos são pequenos peptídeos cíclicos com atividade de defesa investigada experimentalmente; não são os mesmos pigmentos que tornam a flor azul.",
+        "Há flores azuis e brancas; cor isolada não define parentesco, cultivar ou subespécie."
+      ],
+      "sources": [
+        {
+          "id": "c2-kew-clitoria",
+          "title": "Kew POWO — Clitoria ternatea L.",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:486606-1",
+          "scope": "Nome aceito, Fabales/Fabaceae e distribuição. A frase sintética da área nativa e a lista detalhada do backbone não são idênticas; origem exata não é resolvida aqui. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-nparks-clitoria",
+          "title": "NParks — Clitoria ternatea",
+          "url": "https://www.nparks.gov.sg/florafaunaweb/flora/1/3/1372",
+          "scope": "Folhas compostas, flores, vagens, insetos e associação fixadora de nitrogênio. O Atlas explicita que quem fixa N₂ são microrganismos simbiontes, não raízes isoladamente; sem validar usos tradicionais listados. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-clitoria-trial",
+          "title": "Chusak et al. (2018) — Acute effect of Clitoria ternatea flower beverage on glycemic response and antioxidant capacity",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5759795/",
+          "scope": "Ensaio cruzado randomizado agudo em homens saudáveis; resumo consultado. Marcadores pós-prandiais e preparação experimental não comprovam prevenção ou tratamento crônico de diabetes. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-clitoria-cyclotide",
+          "title": "Poth et al. (2011) — Discovery of an unusual biosynthetic origin for circular proteins in legumes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21593408/",
+          "scope": "Artigo original: origem biossintética de ciclotídeos e atividade inseticida experimental de Cter M. Registro e resumo consultados; não mede risco de qualquer flor ornamental nem benefício de consumo humano. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-clitoria-colour",
+          "title": "Spectral Characteristic, Storage Stability and Antioxidant Properties of Anthocyanin Extracts from Flowers of Butterfly Pea (2021)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8622631/",
+          "scope": "Pesquisa experimental sobre espectro, pH e estabilidade de pigmentos; resumo e trechos indexados consultados. Ensaio químico antioxidante não demonstra benefício clínico nem fornece instrução de preparo. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-os-flowering",
+          "title": "OpenStax Biology 2e — Pollination and Fertilization",
+          "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+          "scope": "Princípios gerais de alternância de gerações e fecundação de angiospermas, em síntese própria. Não define citótipo, polinizador efetivo ou rendimento de sementes de cada acesso; sem copiar figuras/exercícios. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-os-nitrogen",
+          "title": "OpenStax Biology 2e — Nutritional Adaptations of Plants",
+          "url": "https://openstax.org/books/biology-2e/pages/31-3-nutritional-adaptations-of-plants",
+          "scope": "Princípios da simbiose em nódulos e fixação de N₂ por microrganismos. Base geral, sem comprovar nodulação ou taxa de fixação de um exemplar de Clitoria. Síntese original, sem imagens ou exercícios reproduzidos. Consulta: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c2-kew-clitoria",
+          "c2-nparks-clitoria",
+          "c2-os-nitrogen"
+        ],
+        "medicinal": [
+          "c2-clitoria-trial"
+        ],
+        "risk": [
+          "c2-clitoria-trial",
+          "c2-clitoria-cyclotide"
+        ]
+      },
+      "education": {
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "angiospermas",
+          "clade": "Eudicotiledôneas",
+          "division": "Streptophyta (filo no backbone POWO)",
+          "class": "Equisetopsida (circunscrição ampla do POWO)",
+          "order": "Fabales",
+          "family": "Fabaceae",
+          "rankNote": "POWO: nome aceito; Fabaceae e Leguminosae nomeiam a mesma família. Cor não determina subespécie."
+        },
+        "morphology": {
+          "habit": "Trepadeira de ramos delgados.",
+          "roots": "Sistema radicular pode associar-se a microrganismos fixadores de nitrogênio.",
+          "stem": "Caules herbáceos apoiam-se em suportes.",
+          "leaves": "Folhas alternas e compostas, com vários folíolos.",
+          "flowers": "Flores bilaterais, com pétalas de cores variáveis.",
+          "fruit": "Legume seco deiscente; semente é estrutura distinta da parede da vagem.",
+          "reserveOrgan": "Não é tubérculo, bulbo ou rizoma de reserva."
+        },
+        "reproduction": {
+          "cycle": "Esporófito 2n forma esporos n, gametófitos reduzidos e gametas; fecundação gera embrião, enquanto ovário participa da formação do fruto.",
+          "pollination": "Insetos visitam flores; presença de abelha não mede por si só deposição de pólen ou produção de sementes.",
+          "dispersal": "Vagens liberam sementes; transporte humano amplia distribuição para além da população local.",
+          "vegetative": "A ficha institucional registra propagação por sementes; não se presume identidade genética entre plantas da mesma cor.",
+          "ploidyNote": "n/2n descrevem fases; não se atribui contagem cromossômica ao material não examinado."
+        },
+        "physiology": {
+          "summary": "Fotossíntese fornece carbono para crescimento e associações radiculares. Nitrogênio fixado depende de metabolismo microbiano e custo energético da simbiose.",
+          "limits": "Nodulação e horário circadiano de abertura floral não foram medidos neste exemplar."
+        },
+        "chemistry": [
+          {
+            "compound": "Antocianinas, incluindo ternatinas; ciclotídeos são outra classe",
+            "plantPart": "Pétalas para pigmentos; tecidos investigados para peptídeos.",
+            "biologicalRole": "Pigmentação e defesa são funções diferentes.",
+            "researchContext": "Espectroscopia, química de peptídeos e bioensaios.",
+            "limit": "Antioxidante em tubo não é efeito clínico; molécula inseticida não equivale a receita caseira ou avaliação de alimento."
+          }
+        ],
+        "study": {
+          "foundation": "Distinguir flor, vagem e semente.",
+          "university": "Conectar simbiose, carbono, N₂ e disponibilidade de nutrientes.",
+          "expert": "Separar pH de soluções, genótipo floral, bioensaio e ensaio clínico.",
+          "examTraps": [
+            "A planta não fixa N₂ sem parceiros microbianos adequados.",
+            "Pigmento não é peptídeo.",
+            "Uma mudança de cor não demonstra ação medicinal."
+          ]
+        },
+        "sourceRefs": [
+          "c2-kew-clitoria",
+          "c2-nparks-clitoria",
+          "c2-clitoria-colour",
+          "c2-clitoria-trial",
+          "c2-clitoria-cyclotide",
+          "c2-os-flowering",
+          "c2-os-nitrogen"
+        ],
+        "id": "clitoria-ternatea"
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "clitoria-ternatea",
+        "path": "assets/images/c/clitoria-ternatea.png",
+        "altText": "Ilustração por IA de uma trepadeira com folhas compostas e flores azul-intenso de garganta clara.",
+        "caption": "Clitória: flores azuis e folhas compostas em uma ilustração gerada por IA.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Clitoria ternatea, a slender climbing tropical legume with compound pinnate leaves with five to seven oval leaflets and several individual deep cobalt-blue pea-shaped flowers, each with a pale creamy yellow-white throat. Flowers are borne naturally in leaf axils and recognizable as butterfly pea flowers, with a broad rounded banner-like corolla. Vivid blue flowers and fresh green foliage in delicate morning light, soft natural garden background. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2542508,
+        "sha256": "c221799190b52157f76d58b0f6ee002c4f37da3460d2b227cf40d0beda0db703"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "cocos-nucifera",
+      "commonName": "Coqueiro · coco",
+      "scientificName": "Cocos nucifera",
+      "author": "L.",
+      "family": "Arecaceae",
+      "genus": "Cocos",
+      "epithet": "nucifera",
+      "subspecies": "Nenhuma subespécie atribuída; cultivar e nome comercial não substituem identificação botânica.",
+      "origin": "POWO situa a área nativa na Malésia central ao sudoeste do Pacífico; a história de cultivo e dispersão humana é complexa.",
+      "habit": "Palmeira de estipe geralmente solitário",
+      "description": "Palmeira de folhas pinadas e frutos com envoltório fibroso. O coco inteiro é fruto; a casca dura é endocarpo. Água e tecido branco internos pertencem ao endosperma, não ao embrião.",
+      "characteristics": [
+        "Folhas pinadas reunidas na copa",
+        "Inflorescências com flores masculinas e femininas",
+        "Drupa fibrosa com uma semente"
+      ],
+      "ecology": "Oferece recursos materiais e alimentares e pode dispersar frutos pela água. Em Palmyra, dominância de coqueiros se associou a menor uso por aves e menor aporte marinho de nutrientes: importância econômica não garante benefício ecológico em toda introdução.",
+      "conservation": "Sem categoria IUCN atribuída. Conservar diversidade cultivada e avaliar efeitos locais antes de introduzir coqueiros em habitats naturais.",
+      "medicinal": {
+        "summary": "Alimento e matéria-prima não equivalem a tratamento. Ensaio comparativo encontrou perfil lipídico mais favorável com óleo de milho que com óleo de coco nas condições estudadas.",
+        "evidence": "nao-estabelecida",
+        "limits": "Esse resultado não avalia água de coco, cura de doenças ou todos os padrões alimentares; não há prescrição individual aqui."
+      },
+      "psychoactive": {
+        "summary": "As fontes escolhidas não estabelecem efeito euforizante ou estado de amor universal.",
+        "dependence": "Dependência psicoativa não demonstrada nesta pesquisa; isso não certifica segurança de produtos concentrados."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Óleo, água e polpa têm composições distintas; atribuir efeito de um ao outro distorce a avaliação.",
+        "symptoms": "Não há uma síndrome agudo único estabelecido nesta ficha para consumo alimentar habitual.",
+        "interactions": "Doença e dieta modificam adequação de produtos; alegação de naturalidade não substitui análise de composição."
+      },
+      "tags": [
+        "Letra C",
+        "monocotiledônea",
+        "endosperma",
+        "dispersão pela água"
+      ],
+      "cardSummary": "Drupa flutuante, endosperma líquido e sólido, domesticação e efeitos ecológicos dependentes do local.",
+      "curiosities": [
+        "A água e a parte branca são formas de endosperma, enquanto o embrião é uma estrutura pequena.",
+        "Microssatélites revelaram grupos genéticos do Pacífico e Indo-Atlântico, ligados à história de cultivo.",
+        "Nem toda planta anã é necessariamente autógama: há exceções entre os coqueiros estudados."
+      ],
+      "sources": [
+        {
+          "id": "c1-kew-cocos",
+          "title": "Kew POWO — Cocos nucifera L.",
+          "url": "https://powo.science.kew.org/taxon/666160-1",
+          "scope": "Nome aceito, autoria, Arecaceae/Arecales e distribuição; perfil geral descreve mesocarpo fibroso e endosperma líquido/sólido. Não se transfere categoria de conservação agregada. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-coconut-lipids-trial",
+          "title": "Maki et al. (2018) — Corn Oil Lowers Plasma Cholesterol Compared with Coconut Oil",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30204921/",
+          "scope": "Ensaio cruzado em adultos com colesterol elevado: perfil lipídico mais favorável com óleo de milho na comparação estudada; resumo consultado. Não compara água de coco nem constitui recomendação alimentar individual. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-coconut-domestication",
+          "title": "Gunn, Baudouin & Olsen (2011) — Independent Origins of Cultivated Coconut",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0021143",
+          "scope": "Pesquisa primária com 1.322 acessos e microssatélites: estrutura Pacífico/Indo-Atlântico, história humana e diversidade reprodutiva; texto consultado. Anão não é sinônimo universal de autógamo. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-coconut-ecology",
+          "title": "Young et al. (2010) — Plants cause ecosystem nutrient depletion via interruption of bird-derived spatial subsidies",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2836700/",
+          "scope": "Pesquisa primária no atol Palmyra: abundância de coqueiros, uso por aves e aportes de nutrientes marinhos. Resultado contextual; não classifica automaticamente o coqueiro como invasor em todo local. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-openstax-cycle",
+          "title": "OpenStax Biology 2e — Pollination and Fertilization",
+          "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+          "scope": "Fundamentos de meiose, gametófitos, polinização, fecundação e formação de sementes; síntese didática original. Não é fonte de cariótipo de acesso nem banco de questões oficiais. Consulta: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c1-kew-cocos"
+        ],
+        "medicinal": [
+          "c1-coconut-lipids-trial"
+        ],
+        "risk": [
+          "c1-coconut-lipids-trial"
+        ]
+      },
+      "education": {
+        "id": "cocos-nucifera",
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "angiospermas",
+          "clade": "Monocotiledôneas",
+          "order": "Arecales",
+          "family": "Arecaceae",
+          "rankNote": "Nome, autoria, ordem e família seguem POWO; o clado é uma camada didática. Sem exemplar testemunho, não atribuímos variedade, cultivar ou citótipo."
+        },
+        "morphology": {
+          "habit": "Palmeira monocotiledônea perene.",
+          "roots": "Raízes adventícias formam sistema sem raiz pivotante típica.",
+          "stem": "Estipe sustenta a copa; não é tronco com anéis anuais típicos de muitas eudicotiledôneas.",
+          "leaves": "Folhas grandes, pinadas, com numerosos folíolos.",
+          "flowers": "Flores unissexuadas na mesma planta caracterizam monoicia.",
+          "fruit": "Drupa: mesocarpo fibroso, endocarpo duro e semente interna.",
+          "reserveOrgan": "Endosperma armazena recursos que sustentam o embrião na germinação."
+        },
+        "reproduction": {
+          "cycle": "Dupla fecundação forma embrião e endosperma, com funções distintas.",
+          "pollination": "Proporção de cruzamentos e autofecundação varia entre grupos e cultivares.",
+          "dispersal": "Fibras e espaços de ar favorecem flutuação; humanos ampliaram a distribuição.",
+          "vegetative": "Produção convencional de mudas usa sementes; não se presume clonagem espontânea.",
+          "ploidyNote": "Fases n/2n não informam sozinhas o número de cromossomos."
+        },
+        "physiology": {
+          "summary": "A reserva oleosa do endosperma abastece a plântula; folhas maduras fornecem assimilados ao fruto em desenvolvimento.",
+          "limits": "Flutuar não garante viabilidade depois de qualquer duração de viagem oceânica."
+        },
+        "chemistry": [
+          {
+            "compound": "Triacilgliceróis",
+            "plantPart": "Endosperma sólido.",
+            "biologicalRole": "Reserva energética para desenvolvimento.",
+            "researchContext": "Composição de óleos e ensaios dietéticos comparativos.",
+            "limit": "Maior HDL isolado não comprova proteção cardiovascular."
+          }
+        ],
+        "study": {
+          "foundation": "Separar fruto, semente, endosperma e embrião.",
+          "university": "Relacionar monoicia e diferentes sistemas de cruzamento.",
+          "expert": "Comparar genética populacional, rotas humanas e impactos ecossistêmicos locais.",
+          "examTraps": [
+            "Coco não é uma semente inteira sem pericarpo.",
+            "Monocotiledônea não significa ausência de tecido de sustentação.",
+            "Espécie útil não é automaticamente adequada à restauração."
+          ]
+        },
+        "sourceRefs": [
+          "c1-kew-cocos",
+          "c1-coconut-lipids-trial",
+          "c1-coconut-domestication",
+          "c1-coconut-ecology",
+          "c1-openstax-cycle"
+        ]
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "cocos-nucifera",
+        "path": "assets/images/c/cocos-nucifera.png",
+        "altText": "Ilustração por IA de um coqueiro com folhas pinadas e cocos verdes sob a copa, próximo ao mar.",
+        "caption": "Coqueiro em cenário costeiro: ilustração gerada por IA.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Cocos nucifera, a coconut palm viewed from a modest low angle, slender subtly ringed curved trunk and long pinnate fronds; a natural cluster of green oval coconuts hangs directly beneath the crown. Tropical coastal landscape in soft distance, turquoise sea and warm sand, no other plant species featured. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 3144664,
+        "sha256": "c965eace73610e986906f95da7eca8d72d6ab9a768804002c2c32bdc411450ec"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "coffea-arabica",
+      "commonName": "Café-arábica",
+      "scientificName": "Coffea arabica",
+      "author": "L.",
+      "family": "Rubiaceae",
+      "genus": "Coffea",
+      "epithet": "arabica",
+      "subspecies": "Nenhuma subespécie atribuída; cultivar e nome comercial não substituem identificação botânica.",
+      "origin": "Nativo do leste do Sudão do Sul, sudoeste da Etiópia e norte do Quênia no POWO; introduzido no Brasil.",
+      "habit": "Arbusto ou pequena árvore perenifólia",
+      "description": "Folhas brilhantes, opostas, e flores brancas axilares identificam o cafeeiro em conjunto com outros caracteres. O grão comercial é semente, e o fruto que o envolve não é cereja de Prunus.",
+      "characteristics": [
+        "Folhas simples opostas",
+        "Flores brancas com corola tubular na base",
+        "Frutos carnosos com sementes usualmente aos pares"
+      ],
+      "ecology": "Flores fornecem recursos a insetos. Experimento na Bahia distinguiu deposição de pólen, crescimento de tubos e frutificação: contar visitantes não basta para medir polinização. Conservar vegetação seminatural pode apoiar redes de polinizadores, conforme a paisagem.",
+      "conservation": "Sem categoria IUCN atribuída nesta ficha. Conservar populações nativas e diversidade genética é diferente de manter uma lavoura comercial.",
+      "medicinal": {
+        "summary": "Cafeína é estimulante estudado; presença na semente não transforma a bebida em tratamento de doenças.",
+        "evidence": "nao-estabelecida",
+        "limits": "Composição, torra e contexto mudam a exposição; esta ficha não demonstra benefício clínico do café nem substituição do sono."
+      },
+      "psychoactive": {
+        "summary": "Cafeína pode aumentar vigília; não comprova euforia, amor universal ou estado permanente de bem-estar.",
+        "dependence": "Uso habitual pode produzir tolerância e abstinência; necessidade de cafeína não deve ser confundida com ganho indefinido de desempenho."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Excesso de cafeína pode alterar sono e frequência cardíaca; sensibilidade varia.",
+        "symptoms": "Palpitações, tremor, ansiedade, desconforto digestivo e insônia.",
+        "interactions": "Medicamentos e outras fontes de estimulantes alteram o contexto de segurança; não somar produtos supondo equivalência."
+      },
+      "tags": [
+        "Letra C",
+        "polinização",
+        "sementes",
+        "cafeína"
+      ],
+      "cardSummary": "Folhas opostas, flores brancas e sementes de café: reprodução, abelhas e limites da cafeína.",
+      "curiosities": [
+        "O epíteto arabica não indica a distribuição nativa africana atual do backbone.",
+        "O chamado grão é semente; não pertence à família das leguminosas.",
+        "Cafeína em concentrações de néctar alterou memória olfativa de abelhas em experimento; isso não é prova de benefício humano."
+      ],
+      "sources": [
+        {
+          "id": "c1-kew-coffea",
+          "title": "Kew POWO — Coffea arabica L.",
+          "url": "https://powo.science.kew.org/taxon/747038-1",
+          "scope": "Nome aceito, autoria, Rubiaceae/Gentianales e distribuição do backbone; usos agregados não comprovam eficácia clínica. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-ncsu-coffea",
+          "title": "NC State Extension — Coffea arabica",
+          "url": "https://plants.ces.ncsu.edu/plants/coffea-arabica/",
+          "scope": "Morfologia, folhas opostas e frutos/sementes do cafeeiro; espécie africana apesar do epíteto arabica. Condições hortícolas regionais não são prescrição agronômica brasileira. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-fda-caffeine",
+          "title": "FDA — Spilling the Beans: How Much Caffeine is Too Much?",
+          "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much",
+          "scope": "Orientação institucional: estimulação, variabilidade individual, sintomas de excesso e abstinência de cafeína. Aqui não se fornece dose ou promessa de desempenho. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-coffee-pollination",
+          "title": "Hipólito et al. (2020) — Performance, Effectiveness, and Efficiency of Honeybees as Pollinators of Coffea arabica",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32691402/",
+          "scope": "Estudo experimental na Bahia sobre visitas, pólen, tubos polínicos e frutificação; resumo consultado. Visitação e eficiência são medidas distintas; resultados de uma fazenda não garantem rendimento universal. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-caffeine-bees",
+          "title": "Wright et al. (2013) — Caffeine in floral nectar enhances a pollinator’s memory of reward",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4521368/",
+          "scope": "Pesquisa primária: cafeína no néctar de Coffea/Citrus e condicionamento olfativo em abelhas; texto consultado. Experimento com polinizadores não estabelece efeito terapêutico ou emocional humano. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-openstax-cycle",
+          "title": "OpenStax Biology 2e — Pollination and Fertilization",
+          "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+          "scope": "Fundamentos de meiose, gametófitos, polinização, fecundação e formação de sementes; síntese didática original. Não é fonte de cariótipo de acesso nem banco de questões oficiais. Consulta: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c1-kew-coffea",
+          "c1-ncsu-coffea"
+        ],
+        "medicinal": [
+          "c1-fda-caffeine"
+        ],
+        "risk": [
+          "c1-fda-caffeine"
+        ]
+      },
+      "education": {
+        "id": "coffea-arabica",
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "angiospermas",
+          "clade": "Eudicotiledôneas",
+          "order": "Gentianales",
+          "family": "Rubiaceae",
+          "rankNote": "Nome, autoria, ordem e família seguem POWO; o clado é uma camada didática. Sem exemplar testemunho, não atribuímos variedade, cultivar ou citótipo."
+        },
+        "morphology": {
+          "habit": "Arbusto lenhoso perene.",
+          "roots": "Sistema radicular absorve água e minerais.",
+          "stem": "Caule ramificado sustenta folhas e ramos floríferos.",
+          "leaves": "Lâminas simples com nervação reticulada e disposição oposta.",
+          "flowers": "Flores bissexuadas; anteras e estigma não são gametas.",
+          "fruit": "Fruto carnoso envolve sementes com reservas.",
+          "reserveOrgan": "Reserva da semente sustenta germinação; fruto não é tubérculo."
+        },
+        "reproduction": {
+          "cycle": "Esporófito produz por meiose esporos que originam gametófitos reduzidos.",
+          "pollination": "Arábica é autocompatível; abelhas podem contribuir para fecundação e frutificação.",
+          "dispersal": "Frutos e sementes são movidos por animais e pessoas; eficácia depende do vetor.",
+          "vegetative": "Mudas clonais preservam genótipos; semente envolve reprodução sexuada.",
+          "ploidyNote": "n/2n indicam fases do ciclo, sem cariótipo atribuído ao exemplar."
+        },
+        "physiology": {
+          "summary": "Folhas captam carbono; água chega pelo xilema e açúcares seguem para drenos como frutos.",
+          "limits": "Resposta à sombra, seca e calor exige medir cultivar e ambiente; sem produção garantida."
+        },
+        "chemistry": [
+          {
+            "compound": "Cafeína",
+            "plantPart": "Sementes e néctar estudados.",
+            "biologicalRole": "Interação química com consumidores e polinizadores.",
+            "researchContext": "Condicionamento experimental em abelhas.",
+            "limit": "Efeito depende da exposição e do organismo."
+          }
+        ],
+        "study": {
+          "foundation": "Distinguir fruto, semente e grão comercial.",
+          "university": "Separar autocompatibilidade, polinização e fecundação.",
+          "expert": "Comparar visitantes, tubos polínicos e frutos sob tratamentos controlados.",
+          "examTraps": [
+            "Autopolinização não elimina participação de abelhas.",
+            "Pólen é gametófito, não um gameta isolado.",
+            "Origem de uma espécie não se deduz apenas do epíteto."
+          ]
+        },
+        "sourceRefs": [
+          "c1-kew-coffea",
+          "c1-ncsu-coffea",
+          "c1-fda-caffeine",
+          "c1-coffee-pollination",
+          "c1-caffeine-bees",
+          "c1-openstax-cycle"
+        ]
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "coffea-arabica",
+        "path": "assets/images/c/coffea-arabica.png",
+        "altText": "Ilustração por IA de um ramo de cafeeiro com folhas verdes e frutos vermelhos e verdes.",
+        "caption": "Cafeeiro: folhas e frutos em uma ilustração gerada por IA.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Coffea arabica, a coherent close view of a living coffee branch with opposite glossy elliptic leaves, clusters of ripe red coffee cherries and a few unripe green cherries growing at the leaf axils. Scene: lush shaded tropical cultivation, warm filtered morning light, natural saturated greens and crimson, detailed leaf veins and fruit texture, soft background. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Keep all visible plant structures anatomically plausible; the same coffee species throughout. Composition: complete central branch, generous readable silhouette, no typography. Constraints: no words, no labels, no watermark, no logos, no faces, no generic flowers on cherries, no beans floating in air, no scientific identification claims.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2874067,
+        "sha256": "f6cd35ded6338f0c4ced869f5de33854f5e9ff0462f03ddcb23120ee7785d207"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "cucurbita-pepo",
+      "commonName": "Abobrinha · algumas abóboras e cabaças",
+      "scientificName": "Cucurbita pepo",
+      "author": "L.",
+      "family": "Cucurbitaceae",
+      "genus": "Cucurbita",
+      "epithet": "pepo",
+      "subspecies": "Nenhuma subespécie atribuída; cultivar e nome comercial não substituem identificação botânica.",
+      "origin": "Tratada no POWO como cultígeno do México; amplamente cultivada. Outras abóboras pertencem a espécies diferentes.",
+      "habit": "Erva anual rastejante ou de crescimento compacto",
+      "description": "Folhas grandes e flores amarelas destacam a planta. A diversidade inclui abobrinhas, determinadas abóboras e formas ornamentais: aparência ou nome popular não certificam identidade nem comestibilidade.",
+      "characteristics": [
+        "Flores masculinas e femininas separadas na mesma planta",
+        "Folhas alternas com nervação e lobação palmadas",
+        "Fruto tipo pepônio, variável em tamanho, casca e formato"
+      ],
+      "ecology": "Pólen e néctar sustentam abelhas; algumas são especialistas de Cucurbita em regiões estudadas. Experimentos de seca mostram que recursos florais, visitas e sementes respondem de modos ligados ao ambiente. Proteger solo e vegetação também pode proteger a rede de polinização.",
+      "conservation": "Sem categoria global atribuída. Preservar diversidade agrícola e populações relacionadas requer documentar acesso e evitar disseminar material sem identificação.",
+      "medicinal": {
+        "summary": "Monografia EMA reconhece uso tradicional de preparações específicas da semente para sintomas urinários.",
+        "evidence": "tradicional",
+        "limits": "Tradição não comprova cura de doença prostática ou câncer; sintomas urinários precisam de diagnóstico, e óleo genérico não equivale à preparação estudada."
+      },
+      "psychoactive": {
+        "summary": "Nenhum efeito euforizante ou estado afetivo permanente foi validado pelas fontes selecionadas.",
+        "dependence": "Dependência psicoativa não estabelecida nesta pesquisa."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Formas ornamentais ou amargas podem conter cucurbitacinas e causar intoxicação; cor e formato não garantem segurança.",
+        "symptoms": "Quadros digestivos podem incluir dor abdominal, vômitos e diarreia.",
+        "interactions": "A classificação alimentar não se transfere a extratos; não se recomenda provar plantas desconhecidas para identificá-las."
+      },
+      "tags": [
+        "Letra C",
+        "monoicia",
+        "pepônio",
+        "abelhas especialistas"
+      ],
+      "cardSummary": "Flores de sexos separados, pepônio e abelhas: diversidade agrícola com limites de identificação alimentar.",
+      "curiosities": [
+        "Abobrinha é frequentemente o fruto colhido imaturo de cultivares da espécie.",
+        "Flor masculina e flor feminina podem estar na mesma planta; isso é monoicia, não flor hermafrodita.",
+        "Abelhas especialistas de Cucurbita não usam necessariamente pepino e melão como fontes de pólen, apesar da mesma família."
+      ],
+      "sources": [
+        {
+          "id": "c1-kew-cucurbita",
+          "title": "Kew POWO — Cucurbita pepo L.",
+          "url": "https://powo.science.kew.org/taxon/292416-1",
+          "scope": "Nome aceito, autoria, Cucurbitaceae/Cucurbitales e tratamento como cultígeno do México; nenhum grupo hortícola ou subespécie atribuído sem identificação. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-ncsu-cucurbita",
+          "title": "NC State Extension — Cucurbita pepo",
+          "url": "https://plants.ces.ncsu.edu/plants/cucurbita-pepo/common-name/ornamental-gourd/",
+          "scope": "Folhas, gavinhas, hábito anual, flores unissexuadas na mesma planta e pepônio; não se adota a afirmação genérica de comestibilidade de todas as sementes, diante do alerta toxicológico oficial. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-ema-pumpkin-seed",
+          "title": "EMA/HMPC (2012) — Final Community herbal monograph on Cucurbita pepo L., semen",
+          "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-cucurbita-pepo-l-semen_en.pdf",
+          "scope": "Monografia final de uso tradicional de preparações específicas da semente; registro oficial e trechos indexados consultados. Reconhecimento tradicional não comprova cura de doença prostática, câncer ou eficácia de qualquer óleo. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-anses-squash",
+          "title": "ANSES — Not all squash are edible",
+          "url": "https://vigilanses.anses.fr/sites/default/files/VigilAnsesN3_October2017_Squash.pdf",
+          "scope": "Boletim institucional de toxicovigilância: formas ornamentais e comestíveis de Cucurbita pepo e intoxicações por cucurbitacinas; trechos indexados consultados. Cor e formato não certificam segurança alimentar. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-psu-squash-pollination",
+          "title": "Penn State Extension — Polinización Integrada de Cultivos de Calabazas",
+          "url": "https://extension.psu.edu/polinizacion-integrada-de-cultivos-de-calabazas",
+          "scope": "Página institucional atualizada em 2026: transporte de pólen entre flores unissexuadas e abelhas especialistas de Cucurbita; composição de visitantes é regional e não universal. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-squash-drought",
+          "title": "Gambel & Holway (2023) — Divergent responses of generalist and specialist pollinators to experimental drought",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10524995/",
+          "scope": "Pesquisa primária com Cucurbita pepo: solo, recursos florais, comportamento de abelhas e formação de sementes; resumo e texto indexado consultados. Não estabelece limiar agronômico universal. Consulta: 2026-10-20."
+        },
+        {
+          "id": "c1-openstax-cycle",
+          "title": "OpenStax Biology 2e — Pollination and Fertilization",
+          "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+          "scope": "Fundamentos de meiose, gametófitos, polinização, fecundação e formação de sementes; síntese didática original. Não é fonte de cariótipo de acesso nem banco de questões oficiais. Consulta: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c1-kew-cucurbita",
+          "c1-ncsu-cucurbita"
+        ],
+        "medicinal": [
+          "c1-ema-pumpkin-seed"
+        ],
+        "risk": [
+          "c1-anses-squash"
+        ]
+      },
+      "education": {
+        "id": "cucurbita-pepo",
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "angiospermas",
+          "clade": "Eudicotiledôneas",
+          "order": "Cucurbitales",
+          "family": "Cucurbitaceae",
+          "rankNote": "Nome, autoria, ordem e família seguem POWO; o clado é uma camada didática. Sem exemplar testemunho, não atribuímos variedade, cultivar ou citótipo."
+        },
+        "morphology": {
+          "habit": "Erva anual com formas de ramas longas ou compactas.",
+          "roots": "Raízes exploram solo; disponibilidade hídrica afeta a reprodução.",
+          "stem": "Caules podem apresentar gavinhas; a arquitetura varia entre cultivares.",
+          "leaves": "Folhas simples, grandes, ásperas e palmadamente lobadas.",
+          "flowers": "Flores unissexuadas; nas femininas o ovário é ínfero.",
+          "fruit": "Pepônio: fruto carnoso com casca variável e sementes internas.",
+          "reserveOrgan": "Sementes acumulam reservas; polpa e casca pertencem ao fruto."
+        },
+        "reproduction": {
+          "cycle": "Esporos originam gametófitos; fecundação dá origem ao embrião protegido na semente.",
+          "pollination": "Na reprodução sexuada usual, pólen deve chegar da flor masculina à feminina; abelhas fazem esse transporte.",
+          "dispersal": "Cultivo humano transporta sementes; não se presume dispersor silvestre universal.",
+          "vegetative": "Sementes descendentes não são clones da planta-mãe; cruzamentos podem modificar a geração seguinte.",
+          "ploidyNote": "Sem contagem cromossômica ou subespécie atribuída ao acesso."
+        },
+        "physiology": {
+          "summary": "Disponibilidade de água altera recursos florais e pode modificar visitas de polinizadores e formação de sementes.",
+          "limits": "Efeitos experimentais dependem de cultivar, ambiente e comunidade; não há número universal de visitas necessárias."
+        },
+        "chemistry": [
+          {
+            "compound": "Óleos de reserva e cucurbitacinas",
+            "plantPart": "Sementes e outros tecidos, com composição dependente do material.",
+            "biologicalRole": "Reserva energética e metabólitos de defesa têm funções distintas.",
+            "researchContext": "Química alimentar e toxicovigilância.",
+            "limit": "Interesse medicinal não elimina toxicidade de formas inadequadas."
+          }
+        ],
+        "study": {
+          "foundation": "Reconhecer monoicia e fruto pepônio.",
+          "university": "Relacionar flor, transporte de pólen e desenvolvimento de sementes.",
+          "expert": "Separar efeitos diretos da seca e efeitos mediados pelos visitantes usando tratamentos controlados.",
+          "examTraps": [
+            "Monoicia não significa flor bissexuada.",
+            "Nem toda abóbora pertence a C. pepo.",
+            "Forma ornamental não garante comestibilidade."
+          ]
+        },
+        "sourceRefs": [
+          "c1-kew-cucurbita",
+          "c1-ncsu-cucurbita",
+          "c1-ema-pumpkin-seed",
+          "c1-anses-squash",
+          "c1-psu-squash-pollination",
+          "c1-squash-drought",
+          "c1-openstax-cycle"
+        ]
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "cucurbita-pepo",
+        "path": "assets/images/c/cucurbita-pepo.png",
+        "altText": "Ilustração por IA de uma aboboreira rasteira com folhas lobadas, gavinhas, flor amarela e abóbora alaranjada sobre o solo.",
+        "caption": "Aboboreira: flor, fruto e hábito rasteiro em uma ilustração gerada por IA.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Cucurbita pepo, a living trailing squash vine in a sunlit garden, rough broad palmately lobed green leaves, curling tendrils, a single large golden yellow trumpet flower and one ribbed orange pumpkin resting naturally on the earth, connected by its firm angular ridged peduncle to the vine. Clear coherent growth habit; no fruits attached to leaf blades. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 3098978,
+        "sha256": "2a7d964a8d5755bf5af2d75d1bbd4f9f922308c0f80e564e78a0a33d5ae5e98c"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "curcuma-longa",
+      "commonName": "Cúrcuma · açafrão-da-terra",
+      "scientificName": "Curcuma longa",
+      "author": "L.",
+      "family": "Zingiberaceae",
+      "genus": "Curcuma",
+      "epithet": "longa",
+      "subspecies": "Nenhuma subespécie atribuída; ficha da espécie, sem exemplar identificado.",
+      "origin": "O POWO a trata como cultígeno do sudoeste da Índia; a história de domesticação não se reduz à presença atual em jardins tropicais.",
+      "habit": "Erva perene rizomatosa",
+      "description": "Erva de folhas largas e rizomas amarelo-alaranjados. O órgão de reserva é um caule subterrâneo com gemas; não é raiz tuberosa nem o açafrão de Crocus.",
+      "characteristics": [
+        "Rizomas ramificados com gemas",
+        "Bainhas foliares compõem brotos aparentando caules",
+        "Inflorescências com brácteas; flores discretas em relação às folhas"
+      ],
+      "ecology": "Produz biomassa e ocupa espaço no estrato herbáceo; em cultivo interage com herbívoros, microrganismos e agentes de podridão do rizoma. Clones agronomicamente semelhantes não representam toda a diversidade genética da espécie.",
+      "conservation": "Categoria IUCN não atribuída. Conservar germoplasma e procedência sanitária; cultivo não substitui proteção de habitats e parentes silvestres.",
+      "medicinal": {
+        "summary": "Cúrcuma e curcuminoides têm ensaios clínicos e resultados iniciais para alguns desfechos, mas preparações e qualidade dos estudos dificultam conclusões gerais.",
+        "evidence": "clinica-limitada",
+        "limits": "Planta inteira, rizoma alimentar, curcumina isolada e suplemento de maior biodisponibilidade diferem. Nenhum resultado autoriza tratá-los como uma intervenção única."
+      },
+      "psychoactive": {
+        "summary": "Euforia ou amor permanente pelo consumo não foram estabelecidos.",
+        "dependence": "Dependência não estabelecida nesta pesquisa; lacuna não certifica segurança."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Produtos de cúrcuma foram associados a lesão hepática em série clínica; formulações de absorção aumentada merecem atenção. Isso não quantifica risco do tempero culinário habitual.",
+        "symptoms": "Queixas digestivas e reações cutâneas podem ocorrer. Urina escura e icterícia são sinais de possível lesão hepática que exigem avaliação.",
+        "interactions": "Fórmulas com outros componentes alteram exposição e interações; maior biodisponibilidade não significa maior segurança."
+      },
+      "tags": [
+        "Letra C",
+        "angiospermas",
+        "Zingiberaceae"
+      ],
+      "cardSummary": "Monocotiledônea de rizomas alaranjados: reserva, clonagem e pesquisa de curcuminoides.",
+      "curiosities": [
+        "O rizoma tem gemas e organização caulinar: sua posição subterrânea não o transforma em raiz.",
+        "Há progênies obtidas de sementes e estudadas experimentalmente; dizer que toda C. longa é absolutamente estéril apaga variação relevante.",
+        "A cor de um rizoma não mede sozinha o teor de curcuminoides ou a qualidade de um produto."
+      ],
+      "sources": [
+        {
+          "id": "c2-kew-curcuma",
+          "title": "Kew POWO — Curcuma longa L.",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:796451-1",
+          "scope": "Nome aceito, Zingiberales/Zingiberaceae e origem tratada como cultígeno do sudoeste da Índia; distribuição não demonstra segurança. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-nparks-curcuma",
+          "title": "NParks — Curcuma longa",
+          "url": "https://www.nparks.gov.sg/florafaunaweb/flora/1/9/1904",
+          "scope": "Morfologia, rizoma e propagação. A afirmação genérica de ausência de sementes no cadastro é qualificada pelo estudo citológico de progênies; alegações medicinais da ficha não são adotadas. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-curcuma-seed",
+          "title": "Nair et al. (2010) — Characterization of Open-Pollinated Seedling Progenies of Turmeric",
+          "url": "https://www.jstage.jst.go.jp/article/cytologia/75/4/75_4_443/_article",
+          "scope": "Resumo do experimento citológico e agronômico: 14 progênies de sementes de IISR Kedaram, variação cromossômica e química. Evita a afirmação absoluta de que a espécie nunca produz sementes; contagens não são transferidas a acessos desconhecidos. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-nccih-turmeric",
+          "title": "NIH/NCCIH — Turmeric: Usefulness and Safety",
+          "url": "https://www.nccih.nih.gov/health/turmeric",
+          "scope": "Síntese institucional: planta, curcumina e produtos distintos; resultados clínicos iniciais, eventos digestivos e relatos de lesão hepática com formulações de maior biodisponibilidade. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-turmeric-dilin",
+          "title": "Halegoua-DeMarzio et al. (2023) — Liver Injury Associated with Turmeric: Ten Cases from DILIN",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36252717/",
+          "scope": "Série clínica primária de lesão hepática associada a produtos de cúrcuma; registro e resumo consultados. Não estima incidência na população nem equivale ao uso culinário habitual. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-os-flowering",
+          "title": "OpenStax Biology 2e — Pollination and Fertilization",
+          "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+          "scope": "Princípios gerais de alternância de gerações e fecundação de angiospermas, em síntese própria. Não define citótipo, polinizador efetivo ou rendimento de sementes de cada acesso; sem copiar figuras/exercícios. Consulta editorial: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c2-kew-curcuma",
+          "c2-nparks-curcuma",
+          "c2-curcuma-seed"
+        ],
+        "medicinal": [
+          "c2-nccih-turmeric"
+        ],
+        "risk": [
+          "c2-nccih-turmeric",
+          "c2-turmeric-dilin"
+        ]
+      },
+      "education": {
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "angiospermas",
+          "clade": "Monocotiledôneas",
+          "division": "Streptophyta (filo no backbone POWO)",
+          "class": "Equisetopsida (circunscrição ampla do POWO)",
+          "order": "Zingiberales",
+          "family": "Zingiberaceae",
+          "rankNote": "Nome aceito no POWO; Curcuma domestica é sinônimo. Aspecto não determina cultivar ou subespécie."
+        },
+        "morphology": {
+          "habit": "Erva que persiste por rizomas.",
+          "roots": "Raízes adventícias absorvem água e sais.",
+          "stem": "Rizomas são caules modificados; bainhas sustentam brotos aéreos.",
+          "leaves": "Folhas largas, simples, com bainhas e nervuras longitudinais.",
+          "flowers": "Flores agrupadas entre brácteas, em inflorescência.",
+          "fruit": "Formação de sementes é limitada em muitos materiais cultivados, sem ausência absoluta em toda a espécie.",
+          "reserveOrgan": "Rizoma de reserva; difere de tubérculo caulinar e raiz tuberosa."
+        },
+        "reproduction": {
+          "cycle": "Angiosperma: reprodução sexuada inclui esporos, gametófitos reduzidos e fecundação. Muitos cultivos dependem sobretudo da via clonal.",
+          "pollination": "Fertilidade depende de acesso, citologia e condições; flores não garantem sementes viáveis.",
+          "dispersal": "Propagação comercial transporta principalmente rizomas; não supor dispersão por sementes em todo cultivo.",
+          "vegetative": "Gemas de rizomas originam novos brotos sem fecundação.",
+          "ploidyNote": "O estudo de Nair encontrou variação entre uma cultivar e progênies. Nenhum número cromossômico é atribuído a material não analisado."
+        },
+        "physiology": {
+          "summary": "Folhas funcionam como fontes de carbono e rizomas podem atuar como drenos de reserva; na brotação, reservas podem ser mobilizadas.",
+          "limits": "Fonte e dreno variam no desenvolvimento, não são nomes fixos de órgãos. Não se mediu metabolismo deste lote."
+        },
+        "chemistry": [
+          {
+            "compound": "Curcuminoides, incluindo curcumina",
+            "plantPart": "Rizomas e preparações analisadas.",
+            "biologicalRole": "Pigmentação e metabolismo especializado; função ecológica depende do contexto.",
+            "researchContext": "Química, agronomia e estudos de preparações clínicas distintas.",
+            "limit": "Teor, absorção e segurança não podem ser inferidos de uma foto, nem transferidos entre alimento e suplemento."
+          }
+        ],
+        "study": {
+          "foundation": "Reconhecer gemas como evidência de caule.",
+          "university": "Relacionar clonagem, fertilidade e diversidade de germoplasma.",
+          "expert": "Separar desfechos agronômicos, químicos e clínicos em protocolos.",
+          "examTraps": [
+            "Rizoma não é raiz.",
+            "Propagação vegetativa não é fecundação.",
+            "Curcumina não é sinônimo da planta inteira."
+          ]
+        },
+        "sourceRefs": [
+          "c2-kew-curcuma",
+          "c2-nparks-curcuma",
+          "c2-curcuma-seed",
+          "c2-nccih-turmeric",
+          "c2-turmeric-dilin",
+          "c2-os-flowering"
+        ],
+        "id": "curcuma-longa"
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "curcuma-longa",
+        "path": "assets/images/c/curcuma-longa.png",
+        "altText": "Ilustração por IA de uma touceira de cúrcuma com folhas alongadas e rizoma ramificado de interior amarelo-alaranjado no solo.",
+        "caption": "Cúrcuma e rizoma, que é um caule subterrâneo: ilustração gerada por IA.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Curcuma longa, turmeric, a living clump in a garden, broad elongated lance-shaped green leaves rising upright from sheathing bases, damp fertile earth. In the foreground next to the plant lies one freshly unearthed branched turmeric rhizome with thin brownish orange surface, nodes and a single clean cut revealing vivid golden orange interior. A coherent natural horticultural illustration, rhizome clearly a thick underground stem, not a potato, carrot or woody root. No flowers necessary. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 3043494,
+        "sha256": "9589adffc877fe8b5b4c28f32268f11b30380f6f0df440d9f7029f5cb24ac72a"
+      },
+      "recordVersion": "0.4.0",
+      "checkedAt": "2026-10-20",
+      "amadeusAssessment": {
+        "status": "not-evaluated",
+        "summary": "A experiência de amor universal e conexão chamada Amadeus pelo autor não foi avaliada neste perfil. Estudos medicinais, aroma ou euforia não demonstram esse resultado; não há base aqui para prometer amor permanente após consumo."
+      }
+    },
+    {
+      "id": "cyathea-arborea",
+      "commonName": "Samambaia-arbórea caribenha",
+      "scientificName": "Cyathea arborea",
+      "author": "(L.) Sm.",
+      "family": "Cyatheaceae",
+      "genus": "Cyathea",
+      "epithet": "arborea",
+      "subspecies": "Nenhuma subespécie atribuída; ficha da espécie, sem exemplar identificado.",
+      "origin": "Caribe e porções adjacentes do norte da América do Sul no POWO. Não confundir este perfil com samambaias-arbóreas brasileiras de outros nomes e gêneros.",
+      "habit": "Samambaia arborescente",
+      "description": "Samambaia de caule ereto e copa de grandes frondes divididas. O aspecto de pequena palmeira não a torna angiosperma: reproduz-se por esporos, sem sementes.",
+      "characteristics": [
+        "Frondes grandes e divididas",
+        "Soros na face inferior de segmentos férteis",
+        "Caule ereto sustenta a copa, sem flores ou cones de conífera"
+      ],
+      "ecology": "Estudo de longo prazo em Luquillo, Porto Rico, registrou recrutamento abundante após o furacão Maria apenas em determinadas parcelas. Luz, água, histórico de perturbação e disponibilidade de propágulos modulam a sucessão; pioneira não significa benéfica em qualquer local.",
+      "conservation": "Categoria global não auditada. Proteger populações e microambientes úmidos; retirada de caules para jardinagem reduz indivíduos. Origem legal de cultivo precisa ser documentada.",
+      "medicinal": {
+        "summary": "Nenhuma indicação medicinal humana foi estabelecida pelas fontes botânicas e ecológicas selecionadas.",
+        "evidence": "nao-estabelecida",
+        "limits": "Não transferir dados de outras samambaias ou nomes populares para esta espécie. Ausência de ensaio não representa comprovação de ineficácia ou de segurança."
+      },
+      "psychoactive": {
+        "summary": "Euforia ou amor permanente pelo consumo não foram estabelecidos.",
+        "dependence": "Dependência não estabelecida nesta pesquisa; lacuna não certifica segurança."
+      },
+      "risk": {
+        "level": "moderado",
+        "summary": "Não foi estabelecida segurança alimentar ou de essências. A ficha é de estudo e conservação, sem uso doméstico validado.",
+        "symptoms": "Não se definiu síndrome toxicológica específica; estruturas ornamentais não devem ser tomadas como partes comestíveis por aparência.",
+        "interactions": "Interações medicamentosas e toxicidade de preparações não foram avaliadas nesta seleção."
+      },
+      "tags": [
+        "Letra C",
+        "pteridofitas",
+        "Cyatheaceae"
+      ],
+      "cardSummary": "Samambaia arborescente: frondes com soros, esporos e respostas à perturbação florestal.",
+      "curiosities": [
+        "Pontos na face inferior da fronde podem ser soros: cada soro reúne esporângios, em vez de ser um conjunto de sementes.",
+        "Uma samambaia pode atingir porte arbóreo sem produzir madeira pelo mesmo câmbio vascular bifacial típico de uma conífera.",
+        "A resposta a um furacão não é uniforme: no estudo de Luquillo, o histórico experimental das parcelas modificou o recrutamento."
+      ],
+      "sources": [
+        {
+          "id": "c2-kew-cyathea",
+          "title": "Kew POWO — Cyathea arborea (L.) Sm.",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:17071820-1",
+          "scope": "Nome aceito, Cyatheales/Cyatheaceae e distribuição. Família em circunscrição explícita; não atribui categoria global de ameaça. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-wfo-cyathea",
+          "title": "World Flora Online — Cyathea arborea, descrição",
+          "url": "https://www.worldfloraonline.org/taxon/wfo-0001108904",
+          "scope": "Trechos institucionais indexados consultados: soros abaxiais e indúsio; carregamento direto falhou. Não se afirma leitura integral da flora agregada. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-forest-cyathea",
+          "title": "Hogan et al. (2022) — Solar radiation and soil moisture drive tropical forest understory responses to experimental and natural hurricanes",
+          "url": "https://research.fs.usda.gov/treesearch/64516",
+          "scope": "Pesquisa primária depositada no US Forest Service; resumo consultado. Recrutamento de Cyathea arborea após o furacão Maria em parcelas controle de Luquillo; não é previsão para toda floresta. Consulta editorial: 2026-10-20."
+        },
+        {
+          "id": "c2-os-ferns",
+          "title": "OpenStax Biology 2e — Seedless Vascular Plants",
+          "url": "https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants",
+          "scope": "Princípios de vascularização, esporófito dominante e ciclo com prótalo em samambaias. Síntese própria; não se universaliza a forma do gametófito ou a ecologia a todas as espécies. Consulta editorial: 2026-10-20."
+        }
+      ],
+      "sourceRefs": {
+        "taxonomy": [
+          "c2-kew-cyathea",
+          "c2-wfo-cyathea",
+          "c2-forest-cyathea"
+        ],
+        "medicinal": [
+          "c2-kew-cyathea",
+          "c2-forest-cyathea"
+        ],
+        "risk": [
+          "c2-kew-cyathea",
+          "c2-forest-cyathea"
+        ]
+      },
+      "education": {
+        "classification": {
+          "kingdom": "Plantae",
+          "majorGroup": "pteridofitas",
+          "clade": "Samambaias (monilófitas)",
+          "division": "Streptophyta (filo no backbone POWO)",
+          "class": "Equisetopsida (circunscrição ampla do POWO)",
+          "order": "Cyatheales",
+          "family": "Cyatheaceae",
+          "rankNote": "POWO: subclasse Polypodiinae. Pteridófitas é agrupamento didático de vasculares sem sementes, não uma família."
+        },
+        "morphology": {
+          "habit": "Samambaia arborescente, não palmeira.",
+          "roots": "Raízes adventícias verdadeiras, distintas de rizoides do gametófito.",
+          "stem": "Caule ereto com feixes vasculares; sustentação não requer o mesmo tipo de lenho das coníferas.",
+          "leaves": "Frondes divididas realizam fotossíntese; frondes férteis portam soros.",
+          "flowers": "Não há flores, pólen ou óvulos.",
+          "fruit": "Não há fruto ou semente; esporângios produzem esporos.",
+          "reserveOrgan": "Caule não é tubérculo, fruto nem tronco de palmeira."
+        },
+        "reproduction": {
+          "cycle": "Esporófito 2n produz esporos n por meiose nos esporângios. O gametófito n, pequeno e distinto, forma gametas por mitose; fecundação reinicia a fase 2n.",
+          "pollination": "Sem polinização: anterozoides flagelados dependem de filme de água para alcançar a oosfera.",
+          "dispersal": "Esporos microscópicos podem ser transportados pelo ar; chegar não garante estabelecimento.",
+          "vegetative": "Não se presume protocolo de multiplicação vegetativa ou identidade clonal entre indivíduos próximos.",
+          "ploidyNote": "n/2n descrevem fases; não se atribui contagem cromossômica ao material não examinado."
+        },
+        "physiology": {
+          "summary": "Xilema e floema abastecem uma planta vascular de grande superfície foliar. A disponibilidade de água também afeta etapas do ciclo sexuado.",
+          "limits": "Não foi atribuída via fotossintética ou tolerância específica à seca a um exemplar."
+        },
+        "chemistry": [
+          {
+            "compound": "Pigmentos fotossintéticos e componentes de parede",
+            "plantPart": "Frondes e tecidos do esporófito.",
+            "biologicalRole": "Fixação de carbono e sustentação.",
+            "researchContext": "Fisiologia geral de plantas vasculares, sem perfil metabolômico específico auditado.",
+            "limit": "Nenhuma essência medicinal foi caracterizada nesta seleção."
+          }
+        ],
+        "study": {
+          "foundation": "Distinguir soro, esporângio, esporo e semente.",
+          "university": "Comparar dominância do esporófito com o ciclo dos musgos.",
+          "expert": "Investigar recrutamento separando chuva de esporos, luz, umidade e história da parcela.",
+          "examTraps": [
+            "Esporo não é gameta.",
+            "Samambaia tem vasos, mas não sementes.",
+            "Porte arbóreo não identifica parentesco com palmeira."
+          ]
+        },
+        "sourceRefs": [
+          "c2-kew-cyathea",
+          "c2-wfo-cyathea",
+          "c2-forest-cyathea",
+          "c2-os-ferns"
+        ],
+        "id": "cyathea-arborea"
+      },
+      "reviewStatus": "pending",
+      "letter": "C",
+      "image": {
+        "id": "cyathea-arborea",
+        "path": "assets/images/c/cyathea-arborea.png",
+        "altText": "Ilustração por IA de uma samambaia arborescente com caule ereto, frondes muito divididas e uma fronde jovem enrolada.",
+        "caption": "Samambaia arborescente em floresta úmida: ilustração gerada por IA; não produz flores nem sementes.",
+        "tool": "image_gen.imagegen (ferramenta nativa)",
+        "createdAt": "2026-10-20 14:55:58 UTC",
+        "prompt": "Use case: scientific-educational. Asset type: vivid botanical editorial illustration for a plant encyclopedia website, square composition. Subject: Cyathea arborea, a tree fern, as a single distinctive arborescent fern rising from a humid tropical forest floor: upright brown trunk with rough fibrous scars, an umbrella crown of long arching highly divided green fronds. In the crown one small tightly coiled young crozier is visible. Deep forest greens, misty light shafts, vivid tropical textures, the entire crown and upper trunk readable. This is a fern: no flowers, no fruits, no seeds, no cones, no palm leaves; fronds have many finely divided pinnae. Style: realistic botanical editorial digital painting with subtle painterly texture, visibly an illustration, not a documentary photograph. Natural vibrant colors, detailed textures, luminous filtered daylight; coherent single scene with recognizable plant silhouette. Show plausible botanical structure of this same species throughout. Constraints: no text, no labels, no logos, no watermark, no people, no composite collage, no impossible floating plant parts.",
+        "reviewStatus": "pending",
+        "representation": "Ilustração gerada por IA; não é fotografia de exemplar identificado nem chave de identificação.",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 3883301,
+        "sha256": "c183e51104fabffd7fab3c7cbe18af244a5539a7c88e10686c3d7578b706a4a2"
+      },
+      "recordVersion": "0.4.0",
       "checkedAt": "2026-10-20",
       "amadeusAssessment": {
         "status": "not-evaluated",
